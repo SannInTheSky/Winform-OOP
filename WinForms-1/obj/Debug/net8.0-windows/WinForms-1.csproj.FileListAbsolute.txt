@@ -1,0 +1,17 @@
+E:\_My Documents\repositories\Winform-OOP\WinForms-1\bin\Debug\net8.0-windows\WinForms-1.exe
+E:\_My Documents\repositories\Winform-OOP\WinForms-1\bin\Debug\net8.0-windows\WinForms-1.deps.json
+E:\_My Documents\repositories\Winform-OOP\WinForms-1\bin\Debug\net8.0-windows\WinForms-1.runtimeconfig.json
+E:\_My Documents\repositories\Winform-OOP\WinForms-1\bin\Debug\net8.0-windows\WinForms-1.dll
+E:\_My Documents\repositories\Winform-OOP\WinForms-1\bin\Debug\net8.0-windows\WinForms-1.pdb
+E:\_My Documents\repositories\Winform-OOP\WinForms-1\obj\Debug\net8.0-windows\WinForms_1.Form1.resources
+E:\_My Documents\repositories\Winform-OOP\WinForms-1\obj\Debug\net8.0-windows\WinForms-1.csproj.GenerateResource.cache
+E:\_My Documents\repositories\Winform-OOP\WinForms-1\obj\Debug\net8.0-windows\WinForms-1.GeneratedMSBuildEditorConfig.editorconfig
+E:\_My Documents\repositories\Winform-OOP\WinForms-1\obj\Debug\net8.0-windows\WinForms-1.AssemblyInfoInputs.cache
+E:\_My Documents\repositories\Winform-OOP\WinForms-1\obj\Debug\net8.0-windows\WinForms-1.AssemblyInfo.cs
+E:\_My Documents\repositories\Winform-OOP\WinForms-1\obj\Debug\net8.0-windows\WinForms-1.csproj.CoreCompileInputs.cache
+E:\_My Documents\repositories\Winform-OOP\WinForms-1\obj\Debug\net8.0-windows\WinForms-1.sourcelink.json
+E:\_My Documents\repositories\Winform-OOP\WinForms-1\obj\Debug\net8.0-windows\WinForms-1.dll
+E:\_My Documents\repositories\Winform-OOP\WinForms-1\obj\Debug\net8.0-windows\refint\WinForms-1.dll
+E:\_My Documents\repositories\Winform-OOP\WinForms-1\obj\Debug\net8.0-windows\WinForms-1.pdb
+E:\_My Documents\repositories\Winform-OOP\WinForms-1\obj\Debug\net8.0-windows\WinForms-1.genruntimeconfig.cache
+E:\_My Documents\repositories\Winform-OOP\WinForms-1\obj\Debug\net8.0-windows\ref\WinForms-1.dll
