@@ -80,8 +80,8 @@ namespace WinForms_1.Models
             Intelligence = intelligence;
         }
 
-        public abstract void Attack();
-        public abstract void Defend();
+        public abstract string Attack();
+        public abstract string Defend();
         public abstract void LevelUp();
     }
 }

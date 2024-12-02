@@ -16,28 +16,28 @@ namespace WinForms_1.Models
 
         }
 
-        public override void Attack()
+        public override string Attack()
         {
             int magicDamage = (Intelligence * 3) + SpellPower;
             int burnChance = new Random().Next(0, 99);
             bool burnEffect = burnChance < 25 ? true : false;
 
             if (burnEffect)
-                Console.WriteLine($"Attack: {Name} casts a spell and deals {magicDamage} magic damage. Additional burn effect is applied.");
+                return $"Attack: {Name} casts a spell and deals {magicDamage} magic damage. Additional burn effect is applied.";
             else
-                Console.WriteLine($"Attack: {Name} casts a spell and deals {magicDamage} magic damage.");
+                return ($"Attack: {Name} casts a spell and deals {magicDamage} magic damage.");
         }
 
-        public override void Defend()
+        public override string Defend()
         {
             int damageReduction = Mana / 4;
             int evadeChance = new Random().Next(0, 99);
             bool evadeAttack = evadeChance < 20 ? true : false;
 
             if (evadeAttack)
-                Console.WriteLine($"Defend: {Name} evades the attack and negates all incoming damage.");
+                return $"Defend: {Name} evades the attack and negates all incoming damage.";
             else
-                Console.WriteLine($"Defend: {Name} guards for the incoming attack. Damage received is reduced by {damageReduction}.");
+                return $"Defend: {Name} guards for the incoming attack. Damage received is reduced by {damageReduction}.";
         }
 
         public override void LevelUp()
@@ -55,12 +55,12 @@ namespace WinForms_1.Models
 
         public override string ToString()
         {
-            return $"Name: {Name}\n" +
-            $"Class: Mage\n" +
-            $"\nLevel: {Level}\n" +
-            $"Health: {Health}\n" +
-            $"Mana: {Mana}\n" +
-            $"Intelligence: {Intelligence}\n" +
+            return $"Name: {Name}\r\n" +
+            $"Class: Mage\r\n" +
+            $"\r\nLevel: {Level}\r\n" +
+            $"Health: {Health}\r\n" +
+            $"Mana: {Mana}\r\n" +
+            $"Intelligence: {Intelligence}\r\n" +
             $"Spell Power: {SpellPower}";
         }
     }

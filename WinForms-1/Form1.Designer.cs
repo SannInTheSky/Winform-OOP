@@ -243,14 +243,14 @@
             battleLog.ItemHeight = 17;
             battleLog.Location = new Point(572, 31);
             battleLog.Name = "battleLog";
-            battleLog.Size = new Size(235, 361);
+            battleLog.Size = new Size(273, 361);
             battleLog.TabIndex = 21;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(819, 415);
+            ClientSize = new Size(855, 415);
             Controls.Add(battleLog);
             Controls.Add(btnLevelUp);
             Controls.Add(btnDefend);

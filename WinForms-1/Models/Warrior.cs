@@ -16,7 +16,7 @@ namespace WinForms_1.Models
 
         }
 
-        public override void Attack()
+        public override string Attack()
         {
             int baseDamage = Strength * 2;
             int criticalRate = new Random().Next(0, 99);
@@ -24,21 +24,21 @@ namespace WinForms_1.Models
             int finalDamage = criticalHit ? baseDamage * 2 : baseDamage;
 
             if (criticalHit)
-                Console.WriteLine($"Attack: {Name} attacks and deals {finalDamage} damage. It was a critical hit!");
+                return $"Attack: {Name} attacks and deals {finalDamage} damage. It was a critical hit!";
             else
-                Console.WriteLine($"Attack: {Name} attacks and deals {finalDamage} damage.");
+                return $"Attack: {Name} attacks and deals {finalDamage} damage.";
         }
 
-        public override void Defend()
+        public override string Defend()
         {
             int damageReduction = Armor / 2;
             int blockRate = new Random().Next(0, 99);
             bool blockedDamage = blockRate < 15 ? true : false;
 
             if (blockedDamage)
-                Console.WriteLine($"Defend: {Name} blocked the incoming attack! All damage is negated.");
+                return $"Defend: {Name} blocked the incoming attack! All damage is negated.";
             else
-                Console.WriteLine($"Defend: {Name} guards for the incoming attack. Damage received is reduced by {damageReduction}.");
+                return $"Defend: {Name} guards for the incoming attack. Damage received is reduced by {damageReduction}.";
         }
 
         public override void LevelUp()
@@ -56,11 +56,11 @@ namespace WinForms_1.Models
 
         public override string ToString()
         {
-            return $"Name: {Name}\n" +
-            $"Class: Warrior\n" +
-            $"\nLevel: {Level}\n" +
-            $"Health: {Health}\n" +
-            $"Strength: {Strength}\n" +
+            return $"Name: {Name}\r\n" +
+            $"Class: Warrior\r\n" +
+            $"\r\nLevel: {Level}\r\n" +
+            $"Health: {Health}\r\n" +
+            $"Strength: {Strength}\r\n" +
             $"Armor: {Armor}";
         }
     }

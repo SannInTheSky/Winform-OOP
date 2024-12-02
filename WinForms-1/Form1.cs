@@ -80,8 +80,7 @@ namespace WinForms_1
                 MessageBox.Show("No character selected!");
                 return;
             }
-            selectedCharacter.Attack();
-            battleLog.Items.Add($"{selectedCharacter.Name} performed an attack.");
+            AddToBattleLog(selectedCharacter.Attack());
             txtCharacterDetails.Text = selectedCharacter.ToString();
         }
 
@@ -93,8 +92,8 @@ namespace WinForms_1
                 MessageBox.Show("No character selected!");
                 return;
             }
-            selectedCharacter.Defend();
-            battleLog.Items.Add($"{selectedCharacter.Name} defended.");
+            
+            AddToBattleLog(selectedCharacter.Defend());
             txtCharacterDetails.Text = selectedCharacter.ToString();
         }
 
@@ -128,6 +127,31 @@ namespace WinForms_1
             {
                 MessageBox.Show("Please select a valid character type.");
                 return;
+            }
+        }
+
+        private void AddToBattleLog(string message)
+        {
+            int maxLineLength = 40; 
+            List<string> lines = new List<string>();
+
+            while (message.Length > maxLineLength)
+            {
+                int splitIndex = message.LastIndexOf(' ', maxLineLength);
+                if (splitIndex == -1) splitIndex = maxLineLength; 
+
+                lines.Add(message.Substring(0, splitIndex));
+                message = message.Substring(splitIndex).TrimStart();
+            }
+
+            if (message.Length > 0)
+            {
+                lines.Add(message); 
+            }
+
+            foreach (var line in lines)
+            {
+                battleLog.Items.Add(line);
             }
         }
     }
