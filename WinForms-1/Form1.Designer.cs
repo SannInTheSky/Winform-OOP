@@ -174,7 +174,7 @@
             // 
             listBoxCharacters.FormattingEnabled = true;
             listBoxCharacters.ItemHeight = 17;
-            listBoxCharacters.Location = new Point(17, 313);
+            listBoxCharacters.Location = new Point(12, 303);
             listBoxCharacters.Name = "listBoxCharacters";
             listBoxCharacters.Size = new Size(110, 89);
             listBoxCharacters.TabIndex = 14;
@@ -212,7 +212,7 @@
             // 
             // btnAttack
             // 
-            btnAttack.Location = new Point(346, 288);
+            btnAttack.Location = new Point(346, 278);
             btnAttack.Name = "btnAttack";
             btnAttack.Size = new Size(207, 34);
             btnAttack.TabIndex = 18;
@@ -222,7 +222,7 @@
             // 
             // btnDefend
             // 
-            btnDefend.Location = new Point(346, 328);
+            btnDefend.Location = new Point(346, 318);
             btnDefend.Name = "btnDefend";
             btnDefend.Size = new Size(207, 34);
             btnDefend.TabIndex = 19;
@@ -232,7 +232,7 @@
             // 
             // btnLevelUp
             // 
-            btnLevelUp.Location = new Point(346, 368);
+            btnLevelUp.Location = new Point(346, 358);
             btnLevelUp.Name = "btnLevelUp";
             btnLevelUp.Size = new Size(207, 34);
             btnLevelUp.TabIndex = 20;
