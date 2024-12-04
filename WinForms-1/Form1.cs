@@ -92,7 +92,7 @@ namespace WinForms_1
                 MessageBox.Show("No character selected!");
                 return;
             }
-            
+
             AddToBattleLog(selectedCharacter.Defend());
             txtCharacterDetails.Text = selectedCharacter.ToString();
         }
@@ -132,13 +132,13 @@ namespace WinForms_1
 
         private void AddToBattleLog(string message)
         {
-            int maxLineLength = 40; 
+            int maxLineLength = 40;
             List<string> lines = new List<string>();
 
             while (message.Length > maxLineLength)
             {
                 int splitIndex = message.LastIndexOf(' ', maxLineLength);
-                if (splitIndex == -1) splitIndex = maxLineLength; 
+                if (splitIndex == -1) splitIndex = maxLineLength;
 
                 lines.Add(message.Substring(0, splitIndex));
                 message = message.Substring(splitIndex).TrimStart();
@@ -146,13 +146,18 @@ namespace WinForms_1
 
             if (message.Length > 0)
             {
-                lines.Add(message); 
+                lines.Add(message);
             }
 
             foreach (var line in lines)
             {
                 battleLog.Items.Add(line);
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -252,16 +252,18 @@
             // pictureBox1
             // 
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
-            pictureBox1.Location = new Point(-3, -27);
+            pictureBox1.Location = new Point(-9, -32);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(869, 452);
             pictureBox1.TabIndex = 22;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(192, 255, 192);
             ClientSize = new Size(855, 415);
             Controls.Add(battleLog);
             Controls.Add(btnLevelUp);
