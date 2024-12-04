@@ -1,0 +1,12 @@
+E:\_My Documents\repositories\Winform-OOP\GameCharacterWinForms\GameCharacterWinForms\bin\Debug\GameCharacterWinForms.exe.config
+E:\_My Documents\repositories\Winform-OOP\GameCharacterWinForms\GameCharacterWinForms\bin\Debug\GameCharacterWinForms.exe
+E:\_My Documents\repositories\Winform-OOP\GameCharacterWinForms\GameCharacterWinForms\bin\Debug\GameCharacterWinForms.pdb
+E:\_My Documents\repositories\Winform-OOP\GameCharacterWinForms\GameCharacterWinForms\obj\Debug\GameCharacterWinForms.csproj.AssemblyReference.cache
+E:\_My Documents\repositories\Winform-OOP\GameCharacterWinForms\GameCharacterWinForms\obj\Debug\GameCharacterWinForms.Form1.resources
+E:\_My Documents\repositories\Winform-OOP\GameCharacterWinForms\GameCharacterWinForms\obj\Debug\GameCharacterWinForms.Properties.Resources.resources
+E:\_My Documents\repositories\Winform-OOP\GameCharacterWinForms\GameCharacterWinForms\obj\Debug\GameCharacterWinForms.csproj.GenerateResource.cache
+E:\_My Documents\repositories\Winform-OOP\GameCharacterWinForms\GameCharacterWinForms\obj\Debug\GameCharacterWinForms.csproj.CoreCompileInputs.cache
+E:\_My Documents\repositories\Winform-OOP\GameCharacterWinForms\GameCharacterWinForms\obj\Debug\GameCharacterWinForms.exe
+E:\_My Documents\repositories\Winform-OOP\GameCharacterWinForms\GameCharacterWinForms\obj\Debug\GameCharacterWinForms.pdb
+E:\_My Documents\repositories\Winform-OOP\GameCharacterWinForms\GameCharacterWinForms\obj\Debug\GameCharacterWinForms.txtName.resources
+E:\_My Documents\repositories\Winform-OOP\GameCharacterWinForms\GameCharacterWinForms\obj\Debug\GameCharacterWinForms.Form3.resources
