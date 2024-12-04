@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             labelName = new Label();
             txtName = new TextBox();
             txtLevel = new TextBox();
@@ -50,6 +51,8 @@
             btnDefend = new Button();
             btnLevelUp = new Button();
             battleLog = new ListBox();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // labelName
@@ -246,6 +249,15 @@
             battleLog.Size = new Size(273, 361);
             battleLog.TabIndex = 21;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
+            pictureBox1.Location = new Point(-3, -27);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(869, 452);
+            pictureBox1.TabIndex = 22;
+            pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
@@ -273,9 +285,11 @@
             Controls.Add(labelLevel);
             Controls.Add(txtName);
             Controls.Add(labelName);
+            Controls.Add(pictureBox1);
             Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Name = "Form1";
             Text = "Game Character";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -304,5 +318,6 @@
         private System.Windows.Forms.Button btnDefend;
         private System.Windows.Forms.Button btnLevelUp;
         private System.Windows.Forms.ListBox battleLog;
+        private PictureBox pictureBox1;
     }
 }
