@@ -15,6 +15,7 @@ namespace GameCharacterWinForms
         public Form1()
         {
             InitializeComponent();
+            this.pictureBox1.Parent = btnStartGame;
         }
 
         private void btnStartGame_Click(object sender, EventArgs e)
@@ -22,6 +23,11 @@ namespace GameCharacterWinForms
             this.Hide();
             Form2 form2 = new Form2();
             form2.Show();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            this.pictureBox1.Parent = btnStartGame;
         }
     }
 }
