@@ -129,7 +129,7 @@ namespace GameCharacterWinForms
             this.customProgressBar3.Location = new System.Drawing.Point(200, 20);
             this.customProgressBar3.Name = "customProgressBar3";
             this.customProgressBar3.ProgressBarColor = System.Drawing.Color.Red;
-            this.customProgressBar3.Size = new System.Drawing.Size(100, 8);
+            this.customProgressBar3.Size = new System.Drawing.Size(140, 8);
             this.customProgressBar3.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.customProgressBar3.TabIndex = 34;
             this.customProgressBar3.Value = 100;
