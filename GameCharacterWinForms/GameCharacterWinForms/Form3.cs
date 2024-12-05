@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GameCharacterWinForms.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,13 @@ namespace GameCharacterWinForms
         public Form3()
         {
             InitializeComponent();
+        }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form2 form2 = new Form2();
+            form2.Show();
         }
     }
 }

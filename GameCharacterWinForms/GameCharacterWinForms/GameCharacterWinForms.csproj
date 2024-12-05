@@ -66,6 +66,9 @@
     </Compile>
     <Compile Include="Models\GameCharacter.cs" />
     <Compile Include="Models\Mage.cs" />
+    <Compile Include="Models\CustomProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Models\Warrior.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

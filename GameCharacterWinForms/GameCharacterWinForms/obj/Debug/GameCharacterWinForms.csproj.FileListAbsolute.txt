@@ -8,5 +8,5 @@ E:\_My Documents\repositories\Winform-OOP\GameCharacterWinForms\GameCharacterWin
 E:\_My Documents\repositories\Winform-OOP\GameCharacterWinForms\GameCharacterWinForms\obj\Debug\GameCharacterWinForms.csproj.CoreCompileInputs.cache
 E:\_My Documents\repositories\Winform-OOP\GameCharacterWinForms\GameCharacterWinForms\obj\Debug\GameCharacterWinForms.exe
 E:\_My Documents\repositories\Winform-OOP\GameCharacterWinForms\GameCharacterWinForms\obj\Debug\GameCharacterWinForms.pdb
-E:\_My Documents\repositories\Winform-OOP\GameCharacterWinForms\GameCharacterWinForms\obj\Debug\GameCharacterWinForms.txtName.resources
 E:\_My Documents\repositories\Winform-OOP\GameCharacterWinForms\GameCharacterWinForms\obj\Debug\GameCharacterWinForms.Form3.resources
+E:\_My Documents\repositories\Winform-OOP\GameCharacterWinForms\GameCharacterWinForms\obj\Debug\GameCharacterWinForms.Form2.resources
