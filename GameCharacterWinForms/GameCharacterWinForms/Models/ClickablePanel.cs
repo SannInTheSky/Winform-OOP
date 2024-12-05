@@ -25,14 +25,14 @@ namespace GameCharacterWinForms.Models
             this.MouseDown += ClickablePanel_MouseDown;
             this.MouseUp += ClickablePanel_MouseUp;
 
-            this.Click += (s, e) => OnClick(e); // Ensure the panel handles click events
+            //this.Click += (s, e) => OnClick(e); // Ensure the panel handles click events
         }
 
         protected override void OnControlAdded(ControlEventArgs e)
         {
             base.OnControlAdded(e);
             // Forward child control clicks to the parent panel
-            e.Control.Click += (s, args) => this.OnClick(args);
+            e.Control.Click += (s, args) => this.OnClick(e);
             e.Control.MouseEnter += (s, args) => this.OnMouseEnter(args);
             e.Control.MouseLeave += (s, args) => this.OnMouseLeave(args);
         }

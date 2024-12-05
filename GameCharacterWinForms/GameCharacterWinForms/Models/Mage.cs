@@ -10,13 +10,13 @@ namespace GameCharacterWinForms.Models
 {
     internal class Mage : GameCharacter
     {
-        private int SpellPower { get; set; } = 10;
+        public int SpellPower { get; set; }
 
-        public Mage(string name, int level, int health, int mana, int intelligence)
-            : base(name, level, health, mana, 0, intelligence)
-        {
+        //public Mage(string name, int level, int health, int mana, int intelligence)
+        //    : base(name, level, health, mana, 0, intelligence)
+        //{
 
-        }
+        //}
 
         public override string Attack()
         {

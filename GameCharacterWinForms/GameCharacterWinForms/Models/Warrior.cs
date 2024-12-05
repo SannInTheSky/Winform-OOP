@@ -10,13 +10,16 @@ namespace GameCharacterWinForms.Models
 {
     internal class Warrior : GameCharacter
     {
-        private int Armor { get; set; } = 10;
+        public int Armor { get; set; }
+        public int Stamina { get; set; }
 
-        public Warrior(string name, int level, int health, int strength)
-            : base(name, level, health, 0, strength, 0)
-        {
 
-        }
+
+        //public Warrior(string name, int level, int health, int strength)
+        //    : base(name, level, health, 0, strength, 0)
+        //{
+
+        //}
 
         public override string Attack()
         {
@@ -62,6 +65,7 @@ namespace GameCharacterWinForms.Models
             $"Class: Warrior\r\n" +
             $"\r\nLevel: {Level}\r\n" +
             $"Health: {Health}\r\n" +
+            $"Stamina: {Stamina}\r\n" +
             $"Strength: {Strength}\r\n" +
             $"Armor: {Armor}";
         }

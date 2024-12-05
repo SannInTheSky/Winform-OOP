@@ -8,7 +8,7 @@ namespace GameCharacterWinForms.Models
 {
     internal abstract class GameCharacter
     {
-        public string Name { get; protected set; }
+        public string Name { get; set; }
         private int _Level { get; set; }
         private int _Health { get; set; }
         private int _Mana { get; set; }
@@ -18,7 +18,7 @@ namespace GameCharacterWinForms.Models
         public int Level
         {
             get => _Level;
-            protected set
+            set
             {
                 if (value < 0)
                     throw new ArgumentException("Error: Character Level cannot be negative");
@@ -29,7 +29,7 @@ namespace GameCharacterWinForms.Models
         public int Health
         {
             get => _Health;
-            protected set
+            set
             {
                 if (value < 0)
                     throw new ArgumentException("Error: Character Health cannot be negative");
@@ -40,7 +40,7 @@ namespace GameCharacterWinForms.Models
         public int Mana
         {
             get => _Mana;
-            protected set
+            set
             {
                 if (value < 0)
                     throw new ArgumentException("Error: Character Mana cannot be negative");
@@ -51,7 +51,7 @@ namespace GameCharacterWinForms.Models
         public int Strength
         {
             get => _Strength;
-            protected set
+            set
             {
                 if (value < 0)
                     throw new ArgumentException("Error: Character Strength cannot be negative");
@@ -62,7 +62,7 @@ namespace GameCharacterWinForms.Models
         public int Intelligence
         {
             get => _Intelligence;
-            protected set
+            set
             {
                 if (value < 0)
                     throw new ArgumentException("Error: Character Intelligence cannot be negative");
@@ -70,15 +70,15 @@ namespace GameCharacterWinForms.Models
             }
         }
 
-        public GameCharacter(string name, int level, int health, int mana, int strength, int intelligence)
-        {
-            Name = name;
-            Level = level;
-            Health = health;
-            Mana = mana;
-            Strength = strength;
-            Intelligence = intelligence;
-        }
+        //public GameCharacter(string name, int level, int health, int mana, int strength, int intelligence)
+        //{
+        //    Name = name;
+        //    Level = level;
+        //    Health = health;
+        //    Mana = mana;
+        //    Strength = strength;
+        //    Intelligence = intelligence;
+        //}
 
         public abstract string Attack();
         public abstract string Defend();
