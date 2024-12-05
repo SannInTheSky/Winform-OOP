@@ -36,6 +36,8 @@
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.cmbCharacterType = new System.Windows.Forms.ComboBox();
+            this.lblSelectedClass = new System.Windows.Forms.Label();
+            this.pictureSelectedClass = new System.Windows.Forms.PictureBox();
             this.panelMage = new GameCharacterWinForms.Models.ClickablePanel();
             this.customProgressBar4 = new GameCharacterWinForms.Models.CustomProgressBar();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
@@ -66,6 +68,7 @@
             this.lblStamina = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureSelectedClass)).BeginInit();
             this.panelMage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -146,6 +149,26 @@
             this.cmbCharacterType.Size = new System.Drawing.Size(121, 21);
             this.cmbCharacterType.TabIndex = 23;
             this.cmbCharacterType.Visible = false;
+            // 
+            // lblSelectedClass
+            // 
+            this.lblSelectedClass.Font = new System.Drawing.Font("Castellar", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSelectedClass.Location = new System.Drawing.Point(323, 316);
+            this.lblSelectedClass.Name = "lblSelectedClass";
+            this.lblSelectedClass.Size = new System.Drawing.Size(151, 16);
+            this.lblSelectedClass.TabIndex = 24;
+            this.lblSelectedClass.Text = " Warrior";
+            this.lblSelectedClass.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // pictureSelectedClass
+            // 
+            this.pictureSelectedClass.Location = new System.Drawing.Point(315, 307);
+            this.pictureSelectedClass.Name = "pictureSelectedClass";
+            this.pictureSelectedClass.Size = new System.Drawing.Size(39, 31);
+            this.pictureSelectedClass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureSelectedClass.TabIndex = 21;
+            this.pictureSelectedClass.TabStop = false;
+            this.pictureSelectedClass.UseWaitCursor = true;
             // 
             // panelMage
             // 
@@ -456,6 +479,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureSelectedClass);
+            this.Controls.Add(this.lblSelectedClass);
             this.Controls.Add(this.panelMage);
             this.Controls.Add(this.panelWarrior);
             this.Controls.Add(this.pictureBox12);
@@ -469,6 +494,7 @@
             this.Text = "Form2";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureSelectedClass)).EndInit();
             this.panelMage.ResumeLayout(false);
             this.panelMage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
@@ -525,5 +551,7 @@
         private Models.ClickablePanel panelWarrior;
         private Models.ClickablePanel panelMage;
         private System.Windows.Forms.ComboBox cmbCharacterType;
+        private System.Windows.Forms.Label lblSelectedClass;
+        private System.Windows.Forms.PictureBox pictureSelectedClass;
     }
 }

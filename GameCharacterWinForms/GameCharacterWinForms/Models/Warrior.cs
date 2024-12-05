@@ -64,8 +64,8 @@ namespace GameCharacterWinForms.Models
             return $"Name: {Name}\r\n" +
             $"Class: Warrior\r\n" +
             $"\r\nLevel: {Level}\r\n" +
-            $"Health: {Health}\r\n" +
-            $"Stamina: {Stamina}\r\n" +
+            $"Health: {Health} / {Health}\r\n" +
+            $"Stamina: {Stamina} / {Stamina}\r\n" +
             $"Strength: {Strength}\r\n" +
             $"Armor: {Armor}";
         }

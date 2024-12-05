@@ -69,6 +69,7 @@ namespace GameCharacterWinForms
             this.btnAttack.TabIndex = 18;
             this.btnAttack.Text = "Attack";
             this.btnAttack.UseVisualStyleBackColor = true;
+            this.btnAttack.Click += new System.EventHandler(this.btnAttack_Click);
             // 
             // btnDefend
             // 
@@ -78,6 +79,7 @@ namespace GameCharacterWinForms
             this.btnDefend.TabIndex = 19;
             this.btnDefend.Text = "Defend";
             this.btnDefend.UseVisualStyleBackColor = true;
+            this.btnDefend.Click += new System.EventHandler(this.btnDefend_Click);
             // 
             // btnLevelUp
             // 
@@ -87,13 +89,16 @@ namespace GameCharacterWinForms
             this.btnLevelUp.TabIndex = 20;
             this.btnLevelUp.Text = "Level Up";
             this.btnLevelUp.UseVisualStyleBackColor = true;
+            this.btnLevelUp.Click += new System.EventHandler(this.btnLevelUp_Click);
             // 
             // battleLog
             // 
+            this.battleLog.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.battleLog.FormattingEnabled = true;
+            this.battleLog.ItemHeight = 17;
             this.battleLog.Location = new System.Drawing.Point(12, 317);
             this.battleLog.Name = "battleLog";
-            this.battleLog.Size = new System.Drawing.Size(578, 121);
+            this.battleLog.Size = new System.Drawing.Size(578, 106);
             this.battleLog.TabIndex = 21;
             // 
             // pictureBox1

@@ -60,8 +60,8 @@ namespace GameCharacterWinForms.Models
             return $"Name: {Name}\r\n" +
             $"Class: Mage\r\n" +
             $"\r\nLevel: {Level}\r\n" +
-            $"Health: {Health}\r\n" +
-            $"Mana: {Mana}\r\n" +
+            $"Health: {Health} / {Health}\r\n" +
+            $"Mana: {Mana} / {Mana}\r\n" +
             $"Intelligence: {Intelligence}\r\n" +
             $"Spell Power: {SpellPower}";
         }

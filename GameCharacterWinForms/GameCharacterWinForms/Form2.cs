@@ -9,31 +9,28 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using GameCharacterWinForms.Models;
+using System.Security.Cryptography.X509Certificates;
+using System.IO;
 
 namespace GameCharacterWinForms
 {
     public partial class Form2 : Form
     {
         private GameCharacter selectedCharacter;
+        public GameCharacter currentCharacter;
+        public static Form2 Instance;
 
         public Form2()
         {
             InitializeComponent();
-
-            //panelWarrior.Click += (s, e) =>
-            //{
-            //    MessageBox.Show("Panel clicked!");
-            //    cmbCharacterType.SelectedItem = "Warrior";
-            //};
-
-            //panelMage.Click += (s, e) =>
-            //{
-            //    cmbCharacterType.SelectedItem = "Mage";
-            //};
+            Instance = this;
         }
 
         private void btnToBattle_Click(object sender, EventArgs e)
         {
+            //Default
+            cmbCharacterType.SelectedItem = "Warrior";
+
             if (cmbCharacterType.SelectedItem.ToString() == null)
             {
                 MessageBox.Show("Please select a character class.");
@@ -71,24 +68,30 @@ namespace GameCharacterWinForms
                         Intelligence = 25,
                         SpellPower = 10
                     };
-                    this.selectedCharacter = newCharacter;
                 }
+                currentCharacter = selectedCharacter;
 
-                //txtCharacterDetails.Text = selectedCharacter.ToString();
-                //this.Hide();
-                //Form3 form3 = new Form3();
-                //form3.Show();
+                this.Hide();
+                Form3 form3 = new Form3();
+                form3.Show();
             }
         }
 
         private void panelMage_Click(object sender, EventArgs e)
         {
-                cmbCharacterType.SelectedItem = "Mage";
+            cmbCharacterType.SelectedItem = "Mage";
+            lblSelectedClass.Text = "Mage";
+            //string imageFilePath = Path.Combine(Application.StartupPath, "Assets", "wizard-hat.png");
+            //pictureSelectedClass.Image = Image.FromFile(imageFilePath);
+            //pictureSelectedClass.Invalidate();
         }
 
         private void panelWarrior_Click(object sender, EventArgs e)
         {
             cmbCharacterType.SelectedItem = "Warrior";
+            lblSelectedClass.Text = "Warrior";
+            //string imageFilePath = Path.Combine(Application.StartupPath, "Assets", "sword (3).png");
+            //pictureSelectedClass.Image = Image.FromFile(imageFilePath);
         }
     }
 }

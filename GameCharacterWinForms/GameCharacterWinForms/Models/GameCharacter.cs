@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GameCharacterWinForms.Models
 {
-    internal abstract class GameCharacter
+    public abstract class GameCharacter
     {
         public string Name { get; set; }
         private int _Level { get; set; }
