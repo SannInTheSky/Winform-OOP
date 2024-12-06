@@ -32,11 +32,20 @@ namespace GameCharacterWinForms
         private void Form1_Load(object sender, EventArgs e)
         {
             this.pictureTitle.Parent = pictureBackground;
+            this.lblClickStart.Parent = pictureBackground;
+            this.lblClickExit.Parent = pictureBackground;
         }
 
-        private void pictureBackground_Click(object sender, EventArgs e)
+        private void lblClickStart_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            Form2 form2 = new Form2();
+            form2.Show();
+        }
 
+        private void lblClickExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

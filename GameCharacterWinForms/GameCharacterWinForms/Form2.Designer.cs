@@ -66,7 +66,6 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.lblStamina = new System.Windows.Forms.Label();
-            this.pictureBackground = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureSelectedClass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -82,33 +81,34 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBackground)).BeginInit();
             this.SuspendLayout();
             // 
             // btnToBattle
             // 
+            this.btnToBattle.BackColor = System.Drawing.SystemColors.Control;
             this.btnToBattle.Location = new System.Drawing.Point(298, 384);
             this.btnToBattle.Name = "btnToBattle";
             this.btnToBattle.Size = new System.Drawing.Size(199, 42);
             this.btnToBattle.TabIndex = 0;
             this.btnToBattle.Text = "Fight!";
-            this.btnToBattle.UseVisualStyleBackColor = true;
+            this.btnToBattle.UseVisualStyleBackColor = false;
             this.btnToBattle.Click += new System.EventHandler(this.btnToBattle_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("War-Heroes", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(284, 40);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(220, 27);
+            this.label3.Size = new System.Drawing.Size(217, 31);
             this.label3.TabIndex = 14;
             this.label3.Text = "Select Character";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Location = new System.Drawing.Point(248, 347);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(35, 13);
@@ -135,6 +135,7 @@
             // 
             // lblSelectedClass
             // 
+            this.lblSelectedClass.BackColor = System.Drawing.Color.Transparent;
             this.lblSelectedClass.Font = new System.Drawing.Font("Castellar", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSelectedClass.Location = new System.Drawing.Point(323, 316);
             this.lblSelectedClass.Name = "lblSelectedClass";
@@ -145,16 +146,17 @@
             // 
             // pictureSelectedClass
             // 
+            this.pictureSelectedClass.BackColor = System.Drawing.Color.Transparent;
             this.pictureSelectedClass.Location = new System.Drawing.Point(320, 307);
             this.pictureSelectedClass.Name = "pictureSelectedClass";
             this.pictureSelectedClass.Size = new System.Drawing.Size(33, 31);
             this.pictureSelectedClass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureSelectedClass.TabIndex = 21;
             this.pictureSelectedClass.TabStop = false;
-            this.pictureSelectedClass.UseWaitCursor = true;
             // 
             // pictureBox12
             // 
+            this.pictureBox12.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
             this.pictureBox12.Location = new System.Drawing.Point(503, 384);
             this.pictureBox12.Name = "pictureBox12";
@@ -165,6 +167,7 @@
             // 
             // pictureBox11
             // 
+            this.pictureBox11.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
             this.pictureBox11.Location = new System.Drawing.Point(249, 384);
             this.pictureBox11.Name = "pictureBox11";
@@ -175,6 +178,7 @@
             // 
             // panelMage
             // 
+            this.panelMage.BackColor = System.Drawing.SystemColors.Control;
             this.panelMage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelMage.Controls.Add(this.customProgressBar4);
             this.panelMage.Controls.Add(this.pictureBox10);
@@ -320,6 +324,7 @@
             // 
             // panelWarrior
             // 
+            this.panelWarrior.BackColor = System.Drawing.SystemColors.Control;
             this.panelWarrior.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelWarrior.Controls.Add(this.customProgressBar2);
             this.panelWarrior.Controls.Add(this.pictureBox1);
@@ -348,7 +353,6 @@
             this.customProgressBar2.Size = new System.Drawing.Size(100, 8);
             this.customProgressBar2.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.customProgressBar2.TabIndex = 20;
-            this.customProgressBar2.UseWaitCursor = true;
             this.customProgressBar2.Value = 100;
             // 
             // pictureBox1
@@ -358,7 +362,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(157, 175);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.UseWaitCursor = true;
             // 
             // lblWarriorDescription
             // 
@@ -369,7 +372,6 @@
             this.lblWarriorDescription.TabIndex = 6;
             this.lblWarriorDescription.Text = "A resilient frontline fighter, the Warrior excels in melee combat, using strength" +
     " and heavy armor.";
-            this.lblWarriorDescription.UseWaitCursor = true;
             // 
             // customProgressBar1
             // 
@@ -379,7 +381,6 @@
             this.customProgressBar1.Size = new System.Drawing.Size(100, 8);
             this.customProgressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.customProgressBar1.TabIndex = 19;
-            this.customProgressBar1.UseWaitCursor = true;
             this.customProgressBar1.Value = 100;
             // 
             // lblArmor
@@ -390,7 +391,6 @@
             this.lblArmor.Size = new System.Drawing.Size(55, 13);
             this.lblArmor.TabIndex = 5;
             this.lblArmor.Text = "Armor : 10";
-            this.lblArmor.UseWaitCursor = true;
             // 
             // lblWarriorLevel
             // 
@@ -400,7 +400,6 @@
             this.lblWarriorLevel.Size = new System.Drawing.Size(48, 13);
             this.lblWarriorLevel.TabIndex = 1;
             this.lblWarriorLevel.Text = "Level : 1";
-            this.lblWarriorLevel.UseWaitCursor = true;
             // 
             // pictureBox2
             // 
@@ -411,7 +410,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.UseWaitCursor = true;
             // 
             // pictureBox5
             // 
@@ -422,7 +420,6 @@
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 10;
             this.pictureBox5.TabStop = false;
-            this.pictureBox5.UseWaitCursor = true;
             // 
             // lblStrength
             // 
@@ -432,7 +429,6 @@
             this.lblStrength.Size = new System.Drawing.Size(68, 13);
             this.lblStrength.TabIndex = 4;
             this.lblStrength.Text = "Strength : 25";
-            this.lblStrength.UseWaitCursor = true;
             // 
             // lblHealth
             // 
@@ -442,7 +438,6 @@
             this.lblHealth.Size = new System.Drawing.Size(22, 13);
             this.lblHealth.TabIndex = 2;
             this.lblHealth.Text = "HP";
-            this.lblHealth.UseWaitCursor = true;
             // 
             // pictureBox3
             // 
@@ -453,7 +448,6 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 8;
             this.pictureBox3.TabStop = false;
-            this.pictureBox3.UseWaitCursor = true;
             // 
             // pictureBox4
             // 
@@ -464,7 +458,6 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 9;
             this.pictureBox4.TabStop = false;
-            this.pictureBox4.UseWaitCursor = true;
             // 
             // lblStamina
             // 
@@ -474,24 +467,14 @@
             this.lblStamina.Size = new System.Drawing.Size(21, 13);
             this.lblStamina.TabIndex = 3;
             this.lblStamina.Text = "SP";
-            this.lblStamina.UseWaitCursor = true;
-            // 
-            // pictureBackground
-            // 
-            this.pictureBackground.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBackground.Image = global::GameCharacterWinForms.Properties.Resources.bg_main;
-            this.pictureBackground.Location = new System.Drawing.Point(0, 0);
-            this.pictureBackground.Name = "pictureBackground";
-            this.pictureBackground.Size = new System.Drawing.Size(800, 450);
-            this.pictureBackground.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBackground.TabIndex = 25;
-            this.pictureBackground.TabStop = false;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackgroundImage = global::GameCharacterWinForms.Properties.Resources.bg_main;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pictureSelectedClass);
             this.Controls.Add(this.lblSelectedClass);
@@ -504,7 +487,6 @@
             this.Controls.Add(this.cmbCharacterType);
             this.Controls.Add(this.panelWarrior);
             this.Controls.Add(this.txtName);
-            this.Controls.Add(this.pictureBackground);
             this.Name = "Form2";
             this.Text = "Form2";
             ((System.ComponentModel.ISupportInitialize)(this.pictureSelectedClass)).EndInit();
@@ -524,7 +506,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBackground)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -569,6 +550,5 @@
         private System.Windows.Forms.ComboBox cmbCharacterType;
         private System.Windows.Forms.Label lblSelectedClass;
         private System.Windows.Forms.PictureBox pictureSelectedClass;
-        private System.Windows.Forms.PictureBox pictureBackground;
     }
 }
