@@ -25,12 +25,22 @@ namespace GameCharacterWinForms
                 lblEnergy.Text = "MP";
                 barEnergy.ProgressBarColor = Color.DeepSkyBlue;
                 iconEnergy.Image = Properties.Resources.magic;
+
+                iconStatus1.Image = Properties.Resources.wizard;
+                iconStatus5.Image = Properties.Resources.magic;
+                iconStatus6.Image = Properties.Resources.wizard_hat;
+                iconStatus7.Image = Properties.Resources.magic_wand;
             }
             else if (Form2.Instance.selectedClassType == "Warrior")
             {
                 lblEnergy.Text = "SP";
                 barEnergy.ProgressBarColor = Color.LimeGreen;
                 iconEnergy.Image = Properties.Resources.health_care__1_;
+
+                iconStatus1.Image = Properties.Resources.viking;
+                iconStatus5.Image = Properties.Resources.health_care__1_;
+                iconStatus6.Image = Properties.Resources.sword__3_;
+                iconStatus7.Image = Properties.Resources.shield__2_;
             }
         }
 

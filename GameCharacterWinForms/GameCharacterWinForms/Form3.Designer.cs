@@ -37,29 +37,46 @@ namespace GameCharacterWinForms
             this.btnDefend = new System.Windows.Forms.Button();
             this.btnLevelUp = new System.Windows.Forms.Button();
             this.battleLog = new System.Windows.Forms.ListBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnMenu = new System.Windows.Forms.Button();
-            this.barEnergy = new GameCharacterWinForms.Models.CustomProgressBar();
-            this.barHealth = new GameCharacterWinForms.Models.CustomProgressBar();
-            this.iconEnergy = new System.Windows.Forms.PictureBox();
-            this.iconHealth = new System.Windows.Forms.PictureBox();
             this.lblEnergy = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.gboxStatus = new System.Windows.Forms.GroupBox();
+            this.barEnergy = new GameCharacterWinForms.Models.CustomProgressBar();
+            this.barHealth = new GameCharacterWinForms.Models.CustomProgressBar();
+            this.iconStatus3 = new System.Windows.Forms.PictureBox();
+            this.iconStatus2 = new System.Windows.Forms.PictureBox();
+            this.iconStatus1 = new System.Windows.Forms.PictureBox();
+            this.iconStatus7 = new System.Windows.Forms.PictureBox();
+            this.iconStatus6 = new System.Windows.Forms.PictureBox();
+            this.iconStatus5 = new System.Windows.Forms.PictureBox();
+            this.iconStatus4 = new System.Windows.Forms.PictureBox();
+            this.iconEnergy = new System.Windows.Forms.PictureBox();
+            this.iconHealth = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.gboxStatus.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconStatus3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconStatus2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconStatus1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconStatus7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconStatus6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconStatus5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconStatus4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconEnergy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconHealth)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtCharacterDetails
             // 
-            this.txtCharacterDetails.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCharacterDetails.Location = new System.Drawing.Point(12, 130);
+            this.txtCharacterDetails.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCharacterDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCharacterDetails.Location = new System.Drawing.Point(29, 28);
             this.txtCharacterDetails.Multiline = true;
             this.txtCharacterDetails.Name = "txtCharacterDetails";
             this.txtCharacterDetails.ReadOnly = true;
-            this.txtCharacterDetails.Size = new System.Drawing.Size(137, 168);
+            this.txtCharacterDetails.Size = new System.Drawing.Size(102, 147);
             this.txtCharacterDetails.TabIndex = 17;
-            this.txtCharacterDetails.Text = "Character details will appear here.";
+            this.txtCharacterDetails.Text = resources.GetString("txtCharacterDetails.Text");
             // 
             // btnAttack
             // 
@@ -96,18 +113,10 @@ namespace GameCharacterWinForms
             this.battleLog.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.battleLog.FormattingEnabled = true;
             this.battleLog.ItemHeight = 17;
-            this.battleLog.Location = new System.Drawing.Point(12, 317);
+            this.battleLog.Location = new System.Drawing.Point(12, 324);
             this.battleLog.Name = "battleLog";
             this.battleLog.Size = new System.Drawing.Size(578, 106);
             this.battleLog.TabIndex = 21;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 11);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(137, 113);
-            this.pictureBox1.TabIndex = 22;
-            this.pictureBox1.TabStop = false;
             // 
             // btnMenu
             // 
@@ -118,6 +127,42 @@ namespace GameCharacterWinForms
             this.btnMenu.Text = "Menu";
             this.btnMenu.UseVisualStyleBackColor = true;
             this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            // 
+            // lblEnergy
+            // 
+            this.lblEnergy.AutoSize = true;
+            this.lblEnergy.Location = new System.Drawing.Point(173, 35);
+            this.lblEnergy.Name = "lblEnergy";
+            this.lblEnergy.Size = new System.Drawing.Size(23, 13);
+            this.lblEnergy.TabIndex = 31;
+            this.lblEnergy.Text = "MP";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(173, 15);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(22, 13);
+            this.label5.TabIndex = 30;
+            this.label5.Text = "HP";
+            // 
+            // gboxStatus
+            // 
+            this.gboxStatus.Controls.Add(this.iconStatus3);
+            this.gboxStatus.Controls.Add(this.iconStatus2);
+            this.gboxStatus.Controls.Add(this.iconStatus1);
+            this.gboxStatus.Controls.Add(this.iconStatus7);
+            this.gboxStatus.Controls.Add(this.txtCharacterDetails);
+            this.gboxStatus.Controls.Add(this.iconStatus6);
+            this.gboxStatus.Controls.Add(this.iconStatus5);
+            this.gboxStatus.Controls.Add(this.iconStatus4);
+            this.gboxStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gboxStatus.Location = new System.Drawing.Point(12, 133);
+            this.gboxStatus.Name = "gboxStatus";
+            this.gboxStatus.Size = new System.Drawing.Size(137, 181);
+            this.gboxStatus.TabIndex = 36;
+            this.gboxStatus.TabStop = false;
+            this.gboxStatus.Text = "STATUS";
             // 
             // barEnergy
             // 
@@ -139,6 +184,76 @@ namespace GameCharacterWinForms
             this.barHealth.TabIndex = 34;
             this.barHealth.Value = 100;
             // 
+            // iconStatus3
+            // 
+            this.iconStatus3.Image = global::GameCharacterWinForms.Properties.Resources.level_up__2_;
+            this.iconStatus3.Location = new System.Drawing.Point(6, 77);
+            this.iconStatus3.Name = "iconStatus3";
+            this.iconStatus3.Size = new System.Drawing.Size(15, 15);
+            this.iconStatus3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.iconStatus3.TabIndex = 42;
+            this.iconStatus3.TabStop = false;
+            // 
+            // iconStatus2
+            // 
+            this.iconStatus2.Image = global::GameCharacterWinForms.Properties.Resources.swords;
+            this.iconStatus2.Location = new System.Drawing.Point(6, 44);
+            this.iconStatus2.Name = "iconStatus2";
+            this.iconStatus2.Size = new System.Drawing.Size(15, 15);
+            this.iconStatus2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.iconStatus2.TabIndex = 41;
+            this.iconStatus2.TabStop = false;
+            // 
+            // iconStatus1
+            // 
+            this.iconStatus1.Image = global::GameCharacterWinForms.Properties.Resources.wizard;
+            this.iconStatus1.Location = new System.Drawing.Point(6, 28);
+            this.iconStatus1.Name = "iconStatus1";
+            this.iconStatus1.Size = new System.Drawing.Size(15, 15);
+            this.iconStatus1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.iconStatus1.TabIndex = 40;
+            this.iconStatus1.TabStop = false;
+            // 
+            // iconStatus7
+            // 
+            this.iconStatus7.Image = global::GameCharacterWinForms.Properties.Resources.magic_wand;
+            this.iconStatus7.Location = new System.Drawing.Point(6, 142);
+            this.iconStatus7.Name = "iconStatus7";
+            this.iconStatus7.Size = new System.Drawing.Size(15, 15);
+            this.iconStatus7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.iconStatus7.TabIndex = 39;
+            this.iconStatus7.TabStop = false;
+            // 
+            // iconStatus6
+            // 
+            this.iconStatus6.Image = global::GameCharacterWinForms.Properties.Resources.wizard_hat;
+            this.iconStatus6.Location = new System.Drawing.Point(6, 126);
+            this.iconStatus6.Name = "iconStatus6";
+            this.iconStatus6.Size = new System.Drawing.Size(15, 15);
+            this.iconStatus6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.iconStatus6.TabIndex = 38;
+            this.iconStatus6.TabStop = false;
+            // 
+            // iconStatus5
+            // 
+            this.iconStatus5.Image = ((System.Drawing.Image)(resources.GetObject("iconStatus5.Image")));
+            this.iconStatus5.Location = new System.Drawing.Point(6, 109);
+            this.iconStatus5.Name = "iconStatus5";
+            this.iconStatus5.Size = new System.Drawing.Size(15, 15);
+            this.iconStatus5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.iconStatus5.TabIndex = 37;
+            this.iconStatus5.TabStop = false;
+            // 
+            // iconStatus4
+            // 
+            this.iconStatus4.Image = ((System.Drawing.Image)(resources.GetObject("iconStatus4.Image")));
+            this.iconStatus4.Location = new System.Drawing.Point(6, 93);
+            this.iconStatus4.Name = "iconStatus4";
+            this.iconStatus4.Size = new System.Drawing.Size(15, 15);
+            this.iconStatus4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.iconStatus4.TabIndex = 37;
+            this.iconStatus4.TabStop = false;
+            // 
             // iconEnergy
             // 
             this.iconEnergy.Image = ((System.Drawing.Image)(resources.GetObject("iconEnergy.Image")));
@@ -159,29 +274,21 @@ namespace GameCharacterWinForms
             this.iconHealth.TabIndex = 32;
             this.iconHealth.TabStop = false;
             // 
-            // lblEnergy
+            // pictureBox1
             // 
-            this.lblEnergy.AutoSize = true;
-            this.lblEnergy.Location = new System.Drawing.Point(173, 35);
-            this.lblEnergy.Name = "lblEnergy";
-            this.lblEnergy.Size = new System.Drawing.Size(23, 13);
-            this.lblEnergy.TabIndex = 31;
-            this.lblEnergy.Text = "MP";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(173, 15);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(22, 13);
-            this.label5.TabIndex = 30;
-            this.label5.Text = "HP";
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 11);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(137, 113);
+            this.pictureBox1.TabIndex = 22;
+            this.pictureBox1.TabStop = false;
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.gboxStatus);
             this.Controls.Add(this.barEnergy);
             this.Controls.Add(this.barHealth);
             this.Controls.Add(this.iconEnergy);
@@ -194,12 +301,20 @@ namespace GameCharacterWinForms
             this.Controls.Add(this.btnLevelUp);
             this.Controls.Add(this.btnDefend);
             this.Controls.Add(this.btnAttack);
-            this.Controls.Add(this.txtCharacterDetails);
             this.Name = "Form3";
             this.Text = "Form3";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.gboxStatus.ResumeLayout(false);
+            this.gboxStatus.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconStatus3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconStatus2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconStatus1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconStatus7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconStatus6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconStatus5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconStatus4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconEnergy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconHealth)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -219,5 +334,13 @@ namespace GameCharacterWinForms
         private PictureBox iconHealth;
         private Label lblEnergy;
         private Label label5;
+        private GroupBox gboxStatus;
+        private PictureBox iconStatus4;
+        private PictureBox iconStatus5;
+        private PictureBox iconStatus7;
+        private PictureBox iconStatus6;
+        private PictureBox iconStatus2;
+        private PictureBox iconStatus1;
+        private PictureBox iconStatus3;
     }
 }
