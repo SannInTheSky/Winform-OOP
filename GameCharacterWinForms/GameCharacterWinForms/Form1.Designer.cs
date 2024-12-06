@@ -28,32 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnStartGame = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
-            this.pictureBackground = new System.Windows.Forms.PictureBox();
             this.pictureTitle = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBackground)).BeginInit();
+            this.btnStartGame = new System.Windows.Forms.Button();
+            this.pictureBackground = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureTitle)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBackground)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnStartGame
-            // 
-            this.btnStartGame.Location = new System.Drawing.Point(311, 265);
-            this.btnStartGame.Name = "btnStartGame";
-            this.btnStartGame.Size = new System.Drawing.Size(190, 32);
-            this.btnStartGame.TabIndex = 0;
-            this.btnStartGame.Text = "Start Game";
-            this.btnStartGame.UseVisualStyleBackColor = true;
-            this.btnStartGame.Click += new System.EventHandler(this.btnStartGame_Click);
             // 
             // btnExit
             // 
+            this.btnExit.Font = new System.Drawing.Font("War-Heroes", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.Location = new System.Drawing.Point(311, 313);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(190, 32);
             this.btnExit.TabIndex = 1;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // pictureTitle
+            // 
+            this.pictureTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureTitle.BackColor = System.Drawing.Color.Transparent;
+            this.pictureTitle.Image = global::GameCharacterWinForms.Properties.Resources.Title;
+            this.pictureTitle.Location = new System.Drawing.Point(122, 82);
+            this.pictureTitle.Name = "pictureTitle";
+            this.pictureTitle.Size = new System.Drawing.Size(582, 128);
+            this.pictureTitle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureTitle.TabIndex = 3;
+            this.pictureTitle.TabStop = false;
+            // 
+            // btnStartGame
+            // 
+            this.btnStartGame.BackColor = System.Drawing.Color.Transparent;
+            this.btnStartGame.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnStartGame.Font = new System.Drawing.Font("War-Heroes", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStartGame.Location = new System.Drawing.Point(311, 265);
+            this.btnStartGame.Name = "btnStartGame";
+            this.btnStartGame.Size = new System.Drawing.Size(190, 31);
+            this.btnStartGame.TabIndex = 0;
+            this.btnStartGame.Text = "Start";
+            this.btnStartGame.UseVisualStyleBackColor = false;
+            this.btnStartGame.Click += new System.EventHandler(this.btnStartGame_Click);
             // 
             // pictureBackground
             // 
@@ -65,17 +82,7 @@
             this.pictureBackground.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBackground.TabIndex = 2;
             this.pictureBackground.TabStop = false;
-            // 
-            // pictureTitle
-            // 
-            this.pictureTitle.BackColor = System.Drawing.Color.Transparent;
-            this.pictureTitle.Image = global::GameCharacterWinForms.Properties.Resources.Title;
-            this.pictureTitle.Location = new System.Drawing.Point(200, 97);
-            this.pictureTitle.Name = "pictureTitle";
-            this.pictureTitle.Size = new System.Drawing.Size(420, 81);
-            this.pictureTitle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureTitle.TabIndex = 3;
-            this.pictureTitle.TabStop = false;
+            this.pictureBackground.Click += new System.EventHandler(this.pictureBackground_Click);
             // 
             // Form1
             // 
@@ -90,8 +97,8 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureTitle)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBackground)).EndInit();
             this.ResumeLayout(false);
 
         }

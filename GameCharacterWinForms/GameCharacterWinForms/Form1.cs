@@ -24,9 +24,19 @@ namespace GameCharacterWinForms
             form2.Show();
         }
 
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
             this.pictureTitle.Parent = pictureBackground;
+        }
+
+        private void pictureBackground_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
