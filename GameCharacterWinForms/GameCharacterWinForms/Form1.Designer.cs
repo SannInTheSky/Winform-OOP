@@ -28,13 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.exit = new System.Windows.Forms.PictureBox();
+            this.startgame = new System.Windows.Forms.PictureBox();
             this.pictureTitle = new System.Windows.Forms.PictureBox();
             this.pictureBackground = new System.Windows.Forms.PictureBox();
-            this.lblClickStart = new System.Windows.Forms.Label();
-            this.lblClickExit = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.exit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.startgame)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureTitle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBackground)).BeginInit();
             this.SuspendLayout();
+            // 
+            // exit
+            // 
+            this.exit.BackColor = System.Drawing.Color.Transparent;
+            this.exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.exit.Image = global::GameCharacterWinForms.Properties.Resources.exit;
+            this.exit.Location = new System.Drawing.Point(280, 314);
+            this.exit.Name = "exit";
+            this.exit.Size = new System.Drawing.Size(214, 60);
+            this.exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.exit.TabIndex = 7;
+            this.exit.TabStop = false;
+            this.exit.Click += new System.EventHandler(this.exit_Click);
+            // 
+            // startgame
+            // 
+            this.startgame.BackColor = System.Drawing.Color.Transparent;
+            this.startgame.BackgroundImage = global::GameCharacterWinForms.Properties.Resources.start;
+            this.startgame.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.startgame.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.startgame.Location = new System.Drawing.Point(292, 257);
+            this.startgame.Name = "startgame";
+            this.startgame.Size = new System.Drawing.Size(196, 54);
+            this.startgame.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.startgame.TabIndex = 6;
+            this.startgame.TabStop = false;
+            this.startgame.Click += new System.EventHandler(this.startgame_Click);
             // 
             // pictureTitle
             // 
@@ -59,57 +88,32 @@
             this.pictureBackground.TabIndex = 2;
             this.pictureBackground.TabStop = false;
             // 
-            // lblClickStart
-            // 
-            this.lblClickStart.AutoSize = true;
-            this.lblClickStart.BackColor = System.Drawing.Color.Transparent;
-            this.lblClickStart.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblClickStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblClickStart.Location = new System.Drawing.Point(351, 277);
-            this.lblClickStart.Name = "lblClickStart";
-            this.lblClickStart.Size = new System.Drawing.Size(84, 16);
-            this.lblClickStart.TabIndex = 4;
-            this.lblClickStart.Text = "Start Game";
-            this.lblClickStart.Click += new System.EventHandler(this.lblClickStart_Click);
-            // 
-            // lblClickExit
-            // 
-            this.lblClickExit.AutoSize = true;
-            this.lblClickExit.BackColor = System.Drawing.Color.Transparent;
-            this.lblClickExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblClickExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblClickExit.Location = new System.Drawing.Point(372, 308);
-            this.lblClickExit.Name = "lblClickExit";
-            this.lblClickExit.Size = new System.Drawing.Size(32, 16);
-            this.lblClickExit.TabIndex = 5;
-            this.lblClickExit.Text = "Exit";
-            this.lblClickExit.Click += new System.EventHandler(this.lblClickExit_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lblClickExit);
-            this.Controls.Add(this.lblClickStart);
+            this.Controls.Add(this.exit);
+            this.Controls.Add(this.startgame);
             this.Controls.Add(this.pictureTitle);
             this.Controls.Add(this.pictureBackground);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.exit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.startgame)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureTitle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBackground)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
         private System.Windows.Forms.PictureBox pictureBackground;
         private System.Windows.Forms.PictureBox pictureTitle;
-        private System.Windows.Forms.Label lblClickStart;
-        private System.Windows.Forms.Label lblClickExit;
+        private System.Windows.Forms.PictureBox startgame;
+        private System.Windows.Forms.PictureBox exit;
     }
 }
 

@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.btnToBattle = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.cmbCharacterType = new System.Windows.Forms.ComboBox();
@@ -38,6 +37,7 @@
             this.pictureSelectedClass = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.panelMage = new GameCharacterWinForms.Models.ClickablePanel();
             this.customProgressBar4 = new GameCharacterWinForms.Models.CustomProgressBar();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
@@ -69,6 +69,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureSelectedClass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             this.panelMage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -86,38 +87,30 @@
             // btnToBattle
             // 
             this.btnToBattle.BackColor = System.Drawing.SystemColors.Control;
-            this.btnToBattle.Location = new System.Drawing.Point(298, 384);
+            this.btnToBattle.Font = new System.Drawing.Font("Berlin Sans FB", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnToBattle.Location = new System.Drawing.Point(298, 389);
             this.btnToBattle.Name = "btnToBattle";
             this.btnToBattle.Size = new System.Drawing.Size(199, 42);
             this.btnToBattle.TabIndex = 0;
-            this.btnToBattle.Text = "Fight!";
+            this.btnToBattle.Text = "FIGHT!";
             this.btnToBattle.UseVisualStyleBackColor = false;
             this.btnToBattle.Click += new System.EventHandler(this.btnToBattle_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(284, 40);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(217, 31);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "Select Character";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(248, 347);
+            this.label4.Font = new System.Drawing.Font("Berlin Sans FB", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(232, 352);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.Size = new System.Drawing.Size(60, 21);
             this.label4.TabIndex = 15;
             this.label4.Text = "Name";
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(289, 344);
+            this.txtName.Location = new System.Drawing.Point(298, 353);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(199, 20);
             this.txtName.TabIndex = 16;
@@ -136,18 +129,19 @@
             // lblSelectedClass
             // 
             this.lblSelectedClass.BackColor = System.Drawing.Color.Transparent;
-            this.lblSelectedClass.Font = new System.Drawing.Font("Castellar", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSelectedClass.Font = new System.Drawing.Font("Montgomery", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSelectedClass.ForeColor = System.Drawing.Color.White;
             this.lblSelectedClass.Location = new System.Drawing.Point(323, 316);
             this.lblSelectedClass.Name = "lblSelectedClass";
-            this.lblSelectedClass.Size = new System.Drawing.Size(151, 16);
+            this.lblSelectedClass.Size = new System.Drawing.Size(151, 27);
             this.lblSelectedClass.TabIndex = 24;
-            this.lblSelectedClass.Text = " Warrior";
+            this.lblSelectedClass.Text = "CHOOSE";
             this.lblSelectedClass.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // pictureSelectedClass
             // 
             this.pictureSelectedClass.BackColor = System.Drawing.Color.Transparent;
-            this.pictureSelectedClass.Location = new System.Drawing.Point(320, 307);
+            this.pictureSelectedClass.Location = new System.Drawing.Point(314, 307);
             this.pictureSelectedClass.Name = "pictureSelectedClass";
             this.pictureSelectedClass.Size = new System.Drawing.Size(33, 31);
             this.pictureSelectedClass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -158,7 +152,7 @@
             // 
             this.pictureBox12.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
-            this.pictureBox12.Location = new System.Drawing.Point(503, 384);
+            this.pictureBox12.Location = new System.Drawing.Point(503, 389);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(43, 42);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -169,16 +163,27 @@
             // 
             this.pictureBox11.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
-            this.pictureBox11.Location = new System.Drawing.Point(249, 384);
+            this.pictureBox11.Location = new System.Drawing.Point(249, 389);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(43, 42);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox11.TabIndex = 17;
             this.pictureBox11.TabStop = false;
             // 
+            // pictureBox13
+            // 
+            this.pictureBox13.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox13.Image = global::GameCharacterWinForms.Properties.Resources.SelecChar;
+            this.pictureBox13.Location = new System.Drawing.Point(241, -7);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(301, 131);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox13.TabIndex = 21;
+            this.pictureBox13.TabStop = false;
+            // 
             // panelMage
             // 
-            this.panelMage.BackColor = System.Drawing.SystemColors.Control;
+            this.panelMage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.panelMage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelMage.Controls.Add(this.customProgressBar4);
             this.panelMage.Controls.Add(this.pictureBox10);
@@ -219,7 +224,7 @@
             // 
             // label1
             // 
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label1.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(176, 140);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(152, 55);
@@ -240,18 +245,20 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Berlin Sans FB", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(200, 116);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 13);
+            this.label2.Size = new System.Drawing.Size(89, 15);
             this.label2.TabIndex = 5;
             this.label2.Text = "Spell Power : 10";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Berlin Sans FB", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(176, 72);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(48, 13);
+            this.label6.Size = new System.Drawing.Size(47, 15);
             this.label6.TabIndex = 1;
             this.label6.Text = "Level : 1";
             // 
@@ -278,18 +285,20 @@
             // lblIntelligence
             // 
             this.lblIntelligence.AutoSize = true;
+            this.lblIntelligence.Font = new System.Drawing.Font("Berlin Sans FB", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIntelligence.Location = new System.Drawing.Point(200, 95);
             this.lblIntelligence.Name = "lblIntelligence";
-            this.lblIntelligence.Size = new System.Drawing.Size(82, 13);
+            this.lblIntelligence.Size = new System.Drawing.Size(84, 15);
             this.lblIntelligence.TabIndex = 4;
             this.lblIntelligence.Text = "Intelligence : 25";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Milker", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(197, 23);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(22, 13);
+            this.label5.Size = new System.Drawing.Size(24, 14);
             this.label5.TabIndex = 2;
             this.label5.Text = "HP";
             // 
@@ -316,15 +325,16 @@
             // lblMana
             // 
             this.lblMana.AutoSize = true;
+            this.lblMana.Font = new System.Drawing.Font("Milker", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMana.Location = new System.Drawing.Point(197, 43);
             this.lblMana.Name = "lblMana";
-            this.lblMana.Size = new System.Drawing.Size(23, 13);
+            this.lblMana.Size = new System.Drawing.Size(25, 14);
             this.lblMana.TabIndex = 3;
             this.lblMana.Text = "MP";
             // 
             // panelWarrior
             // 
-            this.panelWarrior.BackColor = System.Drawing.SystemColors.Control;
+            this.panelWarrior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panelWarrior.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelWarrior.Controls.Add(this.customProgressBar2);
             this.panelWarrior.Controls.Add(this.pictureBox1);
@@ -365,7 +375,7 @@
             // 
             // lblWarriorDescription
             // 
-            this.lblWarriorDescription.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblWarriorDescription.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWarriorDescription.Location = new System.Drawing.Point(176, 139);
             this.lblWarriorDescription.Name = "lblWarriorDescription";
             this.lblWarriorDescription.Size = new System.Drawing.Size(152, 55);
@@ -386,18 +396,20 @@
             // lblArmor
             // 
             this.lblArmor.AutoSize = true;
+            this.lblArmor.Font = new System.Drawing.Font("Berlin Sans FB", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblArmor.Location = new System.Drawing.Point(202, 115);
             this.lblArmor.Name = "lblArmor";
-            this.lblArmor.Size = new System.Drawing.Size(55, 13);
+            this.lblArmor.Size = new System.Drawing.Size(62, 15);
             this.lblArmor.TabIndex = 5;
             this.lblArmor.Text = "Armor : 10";
             // 
             // lblWarriorLevel
             // 
             this.lblWarriorLevel.AutoSize = true;
+            this.lblWarriorLevel.Font = new System.Drawing.Font("Berlin Sans FB", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWarriorLevel.Location = new System.Drawing.Point(176, 71);
             this.lblWarriorLevel.Name = "lblWarriorLevel";
-            this.lblWarriorLevel.Size = new System.Drawing.Size(48, 13);
+            this.lblWarriorLevel.Size = new System.Drawing.Size(47, 15);
             this.lblWarriorLevel.TabIndex = 1;
             this.lblWarriorLevel.Text = "Level : 1";
             // 
@@ -424,18 +436,20 @@
             // lblStrength
             // 
             this.lblStrength.AutoSize = true;
+            this.lblStrength.Font = new System.Drawing.Font("Berlin Sans FB", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStrength.Location = new System.Drawing.Point(200, 94);
             this.lblStrength.Name = "lblStrength";
-            this.lblStrength.Size = new System.Drawing.Size(68, 13);
+            this.lblStrength.Size = new System.Drawing.Size(73, 15);
             this.lblStrength.TabIndex = 4;
             this.lblStrength.Text = "Strength : 25";
             // 
             // lblHealth
             // 
             this.lblHealth.AutoSize = true;
+            this.lblHealth.Font = new System.Drawing.Font("Milker", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHealth.Location = new System.Drawing.Point(197, 22);
             this.lblHealth.Name = "lblHealth";
-            this.lblHealth.Size = new System.Drawing.Size(22, 13);
+            this.lblHealth.Size = new System.Drawing.Size(24, 14);
             this.lblHealth.TabIndex = 2;
             this.lblHealth.Text = "HP";
             // 
@@ -462,9 +476,10 @@
             // lblStamina
             // 
             this.lblStamina.AutoSize = true;
+            this.lblStamina.Font = new System.Drawing.Font("Milker", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStamina.Location = new System.Drawing.Point(197, 42);
             this.lblStamina.Name = "lblStamina";
-            this.lblStamina.Size = new System.Drawing.Size(21, 13);
+            this.lblStamina.Size = new System.Drawing.Size(23, 14);
             this.lblStamina.TabIndex = 3;
             this.lblStamina.Text = "SP";
             // 
@@ -482,16 +497,17 @@
             this.Controls.Add(this.pictureBox12);
             this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.btnToBattle);
             this.Controls.Add(this.cmbCharacterType);
             this.Controls.Add(this.panelWarrior);
             this.Controls.Add(this.txtName);
+            this.Controls.Add(this.pictureBox13);
             this.Name = "Form2";
             this.Text = "Form2";
             ((System.ComponentModel.ISupportInitialize)(this.pictureSelectedClass)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             this.panelMage.ResumeLayout(false);
             this.panelMage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
@@ -536,7 +552,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.PictureBox pictureBox11;
@@ -550,5 +565,6 @@
         private System.Windows.Forms.ComboBox cmbCharacterType;
         private System.Windows.Forms.Label lblSelectedClass;
         private System.Windows.Forms.PictureBox pictureSelectedClass;
+        private System.Windows.Forms.PictureBox pictureBox13;
     }
 }

@@ -17,7 +17,7 @@ namespace GameCharacterWinForms
             InitializeComponent();
         }
 
-        private void btnStartGame_Click(object sender, EventArgs e)
+        private void startgame_Click(object sender, EventArgs e)
         {
             this.Hide();
             Form2 form2 = new Form2();
@@ -32,8 +32,8 @@ namespace GameCharacterWinForms
         private void Form1_Load(object sender, EventArgs e)
         {
             this.pictureTitle.Parent = pictureBackground;
-            this.lblClickStart.Parent = pictureBackground;
-            this.lblClickExit.Parent = pictureBackground;
+            this.startgame.Parent = pictureBackground;
+            this.exit.Parent = pictureBackground;
         }
 
         private void lblClickStart_Click(object sender, EventArgs e)
@@ -43,7 +43,7 @@ namespace GameCharacterWinForms
             form2.Show();
         }
 
-        private void lblClickExit_Click(object sender, EventArgs e)
+        private void exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
