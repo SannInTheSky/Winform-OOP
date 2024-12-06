@@ -26,6 +26,7 @@ namespace GameCharacterWinForms
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            this.pictureTitle.Parent = pictureBackground;
         }
     }
 }

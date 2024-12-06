@@ -107,7 +107,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Assets\bg_main.gif" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Assets\sword %283%29.png" />
   </ItemGroup>
@@ -158,6 +160,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\swords.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Title.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
