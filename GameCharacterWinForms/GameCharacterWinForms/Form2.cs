@@ -16,27 +16,29 @@ namespace GameCharacterWinForms
 {
     public partial class Form2 : Form
     {
+        public static Form2 Instance;
         private GameCharacter selectedCharacter;
         public GameCharacter currentCharacter;
-        public static Form2 Instance;
+        public string selectedClassType;
 
         public Form2()
         {
             InitializeComponent();
             Instance = this;
+
+            cmbCharacterType.SelectedItem = null;
         }
 
         private void btnToBattle_Click(object sender, EventArgs e)
         {
             //Default
-            cmbCharacterType.SelectedItem = "Warrior";
 
-            if (cmbCharacterType.SelectedItem.ToString() == null)
+            if (cmbCharacterType.SelectedItem == null)
             {
                 MessageBox.Show("Please select a character class.");
                 return;
             }
-            if (txtName.Text == null)
+            if (string.IsNullOrWhiteSpace(txtName.Text))
             {
                 MessageBox.Show("Please enter character name.");
                 return;
@@ -68,8 +70,10 @@ namespace GameCharacterWinForms
                         Intelligence = 25,
                         SpellPower = 10
                     };
+                    this.selectedCharacter = newCharacter;
                 }
                 currentCharacter = selectedCharacter;
+                selectedClassType = cmbCharacterType.SelectedItem.ToString();
 
                 this.Hide();
                 Form3 form3 = new Form3();
@@ -81,17 +85,14 @@ namespace GameCharacterWinForms
         {
             cmbCharacterType.SelectedItem = "Mage";
             lblSelectedClass.Text = "Mage";
-            //string imageFilePath = Path.Combine(Application.StartupPath, "Assets", "wizard-hat.png");
-            //pictureSelectedClass.Image = Image.FromFile(imageFilePath);
-            //pictureSelectedClass.Invalidate();
+            pictureSelectedClass.Image = Properties.Resources.wizard_hat;
         }
 
         private void panelWarrior_Click(object sender, EventArgs e)
         {
             cmbCharacterType.SelectedItem = "Warrior";
             lblSelectedClass.Text = "Warrior";
-            //string imageFilePath = Path.Combine(Application.StartupPath, "Assets", "sword (3).png");
-            //pictureSelectedClass.Image = Image.FromFile(imageFilePath);
+            pictureSelectedClass.Image = Properties.Resources.sword__3_;
         }
     }
 }

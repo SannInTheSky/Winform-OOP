@@ -33,54 +33,54 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.cmbCharacterType = new System.Windows.Forms.ComboBox();
             this.lblSelectedClass = new System.Windows.Forms.Label();
-            this.pictureSelectedClass = new System.Windows.Forms.PictureBox();
             this.panelMage = new GameCharacterWinForms.Models.ClickablePanel();
             this.customProgressBar4 = new GameCharacterWinForms.Models.CustomProgressBar();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.customProgressBar3 = new GameCharacterWinForms.Models.CustomProgressBar();
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.lblIntelligence = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.lblMana = new System.Windows.Forms.Label();
             this.panelWarrior = new GameCharacterWinForms.Models.ClickablePanel();
             this.customProgressBar2 = new GameCharacterWinForms.Models.CustomProgressBar();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblWarriorDescription = new System.Windows.Forms.Label();
             this.customProgressBar1 = new GameCharacterWinForms.Models.CustomProgressBar();
             this.lblArmor = new System.Windows.Forms.Label();
             this.lblWarriorLevel = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.lblStrength = new System.Windows.Forms.Label();
             this.lblHealth = new System.Windows.Forms.Label();
+            this.lblStamina = new System.Windows.Forms.Label();
+            this.pictureSelectedClass = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.lblStamina = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureSelectedClass)).BeginInit();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.panelMage.SuspendLayout();
+            this.panelWarrior.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureSelectedClass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            this.panelWarrior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.SuspendLayout();
             // 
             // btnToBattle
@@ -113,30 +113,10 @@
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(298, 344);
+            this.txtName.Location = new System.Drawing.Point(289, 344);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(199, 20);
             this.txtName.TabIndex = 16;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
-            this.pictureBox11.Location = new System.Drawing.Point(249, 384);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(43, 42);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox11.TabIndex = 17;
-            this.pictureBox11.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
-            this.pictureBox12.Location = new System.Drawing.Point(503, 384);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(43, 42);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox12.TabIndex = 18;
-            this.pictureBox12.TabStop = false;
             // 
             // cmbCharacterType
             // 
@@ -148,7 +128,6 @@
             this.cmbCharacterType.Name = "cmbCharacterType";
             this.cmbCharacterType.Size = new System.Drawing.Size(121, 21);
             this.cmbCharacterType.TabIndex = 23;
-            this.cmbCharacterType.Visible = false;
             // 
             // lblSelectedClass
             // 
@@ -159,16 +138,6 @@
             this.lblSelectedClass.TabIndex = 24;
             this.lblSelectedClass.Text = " Warrior";
             this.lblSelectedClass.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // pictureSelectedClass
-            // 
-            this.pictureSelectedClass.Location = new System.Drawing.Point(315, 307);
-            this.pictureSelectedClass.Name = "pictureSelectedClass";
-            this.pictureSelectedClass.Size = new System.Drawing.Size(39, 31);
-            this.pictureSelectedClass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureSelectedClass.TabIndex = 21;
-            this.pictureSelectedClass.TabStop = false;
-            this.pictureSelectedClass.UseWaitCursor = true;
             // 
             // panelMage
             // 
@@ -201,14 +170,6 @@
             this.customProgressBar4.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.customProgressBar4.TabIndex = 22;
             this.customProgressBar4.Value = 100;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Location = new System.Drawing.Point(13, 20);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(157, 175);
-            this.pictureBox10.TabIndex = 0;
-            this.pictureBox10.TabStop = false;
             // 
             // label1
             // 
@@ -248,26 +209,6 @@
             this.label6.TabIndex = 1;
             this.label6.Text = "Level : 1";
             // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(180, 95);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(15, 15);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 7;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(181, 43);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(15, 15);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 10;
-            this.pictureBox6.TabStop = false;
-            // 
             // lblIntelligence
             // 
             this.lblIntelligence.AutoSize = true;
@@ -285,26 +226,6 @@
             this.label5.Size = new System.Drawing.Size(22, 13);
             this.label5.TabIndex = 2;
             this.label5.Text = "HP";
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(181, 114);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(15, 15);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 8;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(181, 23);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(15, 15);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 9;
-            this.pictureBox7.TabStop = false;
             // 
             // lblMana
             // 
@@ -348,15 +269,6 @@
             this.customProgressBar2.UseWaitCursor = true;
             this.customProgressBar2.Value = 100;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(13, 19);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(157, 175);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.UseWaitCursor = true;
-            // 
             // lblWarriorDescription
             // 
             this.lblWarriorDescription.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -399,6 +311,104 @@
             this.lblWarriorLevel.Text = "Level : 1";
             this.lblWarriorLevel.UseWaitCursor = true;
             // 
+            // lblStrength
+            // 
+            this.lblStrength.AutoSize = true;
+            this.lblStrength.Location = new System.Drawing.Point(200, 94);
+            this.lblStrength.Name = "lblStrength";
+            this.lblStrength.Size = new System.Drawing.Size(68, 13);
+            this.lblStrength.TabIndex = 4;
+            this.lblStrength.Text = "Strength : 25";
+            this.lblStrength.UseWaitCursor = true;
+            // 
+            // lblHealth
+            // 
+            this.lblHealth.AutoSize = true;
+            this.lblHealth.Location = new System.Drawing.Point(197, 22);
+            this.lblHealth.Name = "lblHealth";
+            this.lblHealth.Size = new System.Drawing.Size(22, 13);
+            this.lblHealth.TabIndex = 2;
+            this.lblHealth.Text = "HP";
+            this.lblHealth.UseWaitCursor = true;
+            // 
+            // lblStamina
+            // 
+            this.lblStamina.AutoSize = true;
+            this.lblStamina.Location = new System.Drawing.Point(197, 42);
+            this.lblStamina.Name = "lblStamina";
+            this.lblStamina.Size = new System.Drawing.Size(21, 13);
+            this.lblStamina.TabIndex = 3;
+            this.lblStamina.Text = "SP";
+            this.lblStamina.UseWaitCursor = true;
+            // 
+            // pictureSelectedClass
+            // 
+            this.pictureSelectedClass.Image = global::GameCharacterWinForms.Properties.Resources.sword__3_;
+            this.pictureSelectedClass.Location = new System.Drawing.Point(320, 307);
+            this.pictureSelectedClass.Name = "pictureSelectedClass";
+            this.pictureSelectedClass.Size = new System.Drawing.Size(33, 31);
+            this.pictureSelectedClass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureSelectedClass.TabIndex = 21;
+            this.pictureSelectedClass.TabStop = false;
+            this.pictureSelectedClass.UseWaitCursor = true;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Location = new System.Drawing.Point(13, 20);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(157, 175);
+            this.pictureBox10.TabIndex = 0;
+            this.pictureBox10.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(180, 95);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(15, 15);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 7;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(181, 43);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(15, 15);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 10;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(181, 114);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(15, 15);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 8;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(181, 23);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(15, 15);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 9;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(13, 19);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(157, 175);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.UseWaitCursor = true;
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
@@ -420,26 +430,6 @@
             this.pictureBox5.TabIndex = 10;
             this.pictureBox5.TabStop = false;
             this.pictureBox5.UseWaitCursor = true;
-            // 
-            // lblStrength
-            // 
-            this.lblStrength.AutoSize = true;
-            this.lblStrength.Location = new System.Drawing.Point(200, 94);
-            this.lblStrength.Name = "lblStrength";
-            this.lblStrength.Size = new System.Drawing.Size(68, 13);
-            this.lblStrength.TabIndex = 4;
-            this.lblStrength.Text = "Strength : 25";
-            this.lblStrength.UseWaitCursor = true;
-            // 
-            // lblHealth
-            // 
-            this.lblHealth.AutoSize = true;
-            this.lblHealth.Location = new System.Drawing.Point(197, 22);
-            this.lblHealth.Name = "lblHealth";
-            this.lblHealth.Size = new System.Drawing.Size(22, 13);
-            this.lblHealth.TabIndex = 2;
-            this.lblHealth.Text = "HP";
-            this.lblHealth.UseWaitCursor = true;
             // 
             // pictureBox3
             // 
@@ -463,15 +453,25 @@
             this.pictureBox4.TabStop = false;
             this.pictureBox4.UseWaitCursor = true;
             // 
-            // lblStamina
+            // pictureBox12
             // 
-            this.lblStamina.AutoSize = true;
-            this.lblStamina.Location = new System.Drawing.Point(197, 42);
-            this.lblStamina.Name = "lblStamina";
-            this.lblStamina.Size = new System.Drawing.Size(21, 13);
-            this.lblStamina.TabIndex = 3;
-            this.lblStamina.Text = "SP";
-            this.lblStamina.UseWaitCursor = true;
+            this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
+            this.pictureBox12.Location = new System.Drawing.Point(503, 384);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(43, 42);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox12.TabIndex = 18;
+            this.pictureBox12.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
+            this.pictureBox11.Location = new System.Drawing.Point(249, 384);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(43, 42);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox11.TabIndex = 17;
+            this.pictureBox11.TabStop = false;
             // 
             // Form2
             // 
@@ -482,33 +482,33 @@
             this.Controls.Add(this.pictureSelectedClass);
             this.Controls.Add(this.lblSelectedClass);
             this.Controls.Add(this.panelMage);
-            this.Controls.Add(this.panelWarrior);
             this.Controls.Add(this.pictureBox12);
             this.Controls.Add(this.pictureBox11);
-            this.Controls.Add(this.txtName);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnToBattle);
             this.Controls.Add(this.cmbCharacterType);
+            this.Controls.Add(this.panelWarrior);
+            this.Controls.Add(this.txtName);
             this.Name = "Form2";
             this.Text = "Form2";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureSelectedClass)).EndInit();
             this.panelMage.ResumeLayout(false);
             this.panelMage.PerformLayout();
+            this.panelWarrior.ResumeLayout(false);
+            this.panelWarrior.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureSelectedClass)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            this.panelWarrior.ResumeLayout(false);
-            this.panelWarrior.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

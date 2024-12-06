@@ -92,6 +92,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -106,8 +107,57 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Assets\" />
+    <None Include="Assets\sword %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\wizard-hat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\gym.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\health.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\health-care %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\health-care.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\magic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\magic-wand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\mana.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\muscle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\shield %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\shield %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\shield.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\sword %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\sword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\sword_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\swords.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

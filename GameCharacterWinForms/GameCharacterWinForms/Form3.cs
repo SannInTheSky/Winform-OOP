@@ -19,6 +19,19 @@ namespace GameCharacterWinForms
             InitializeComponent();
             
             txtCharacterDetails.Text = selectedCharacter.ToString();
+
+            if (Form2.Instance.selectedClassType == "Mage")
+            {
+                lblEnergy.Text = "MP";
+                barEnergy.ProgressBarColor = Color.DeepSkyBlue;
+                iconEnergy.Image = Properties.Resources.magic;
+            }
+            else if (Form2.Instance.selectedClassType == "Warrior")
+            {
+                lblEnergy.Text = "SP";
+                barEnergy.ProgressBarColor = Color.LimeGreen;
+                iconEnergy.Image = Properties.Resources.health_care__1_;
+            }
         }
 
         private void btnMenu_Click(object sender, EventArgs e)

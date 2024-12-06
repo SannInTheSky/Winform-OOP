@@ -48,15 +48,16 @@ namespace GameCharacterWinForms.Models
 
         public override void LevelUp()
         {
-            const int STR = 5, HP = 20, DF = 2;
+            const int STR = 5, HP = 20, SP = 15, DF = 2;
 
             Level++;
             Strength += STR;
             Health += HP;
+            Stamina += SP;
             Armor += DF;
 
             Console.WriteLine($"{Name} has reached Level {Level}!");
-            Console.WriteLine($"Stats Increased: Strength +{STR}, Health +{HP}, Armor +{DF}");
+            Console.WriteLine($"Stats Increased: Strength +{STR}, Health +{HP}, Stamina +{SP}, Armor +{DF}");
         }
 
         public override string ToString()

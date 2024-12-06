@@ -39,15 +39,15 @@ namespace GameCharacterWinForms
             this.battleLog = new System.Windows.Forms.ListBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnMenu = new System.Windows.Forms.Button();
-            this.customProgressBar4 = new GameCharacterWinForms.Models.CustomProgressBar();
-            this.customProgressBar3 = new GameCharacterWinForms.Models.CustomProgressBar();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.lblMana = new System.Windows.Forms.Label();
+            this.barEnergy = new GameCharacterWinForms.Models.CustomProgressBar();
+            this.barHealth = new GameCharacterWinForms.Models.CustomProgressBar();
+            this.iconEnergy = new System.Windows.Forms.PictureBox();
+            this.iconHealth = new System.Windows.Forms.PictureBox();
+            this.lblEnergy = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconEnergy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconHealth)).BeginInit();
             this.SuspendLayout();
             // 
             // txtCharacterDetails
@@ -119,54 +119,54 @@ namespace GameCharacterWinForms
             this.btnMenu.UseVisualStyleBackColor = true;
             this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
-            // customProgressBar4
+            // barEnergy
             // 
-            this.customProgressBar4.Location = new System.Drawing.Point(200, 39);
-            this.customProgressBar4.Name = "customProgressBar4";
-            this.customProgressBar4.ProgressBarColor = System.Drawing.Color.DeepSkyBlue;
-            this.customProgressBar4.Size = new System.Drawing.Size(100, 8);
-            this.customProgressBar4.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.customProgressBar4.TabIndex = 35;
-            this.customProgressBar4.Value = 100;
+            this.barEnergy.Location = new System.Drawing.Point(200, 39);
+            this.barEnergy.Name = "barEnergy";
+            this.barEnergy.ProgressBarColor = System.Drawing.Color.DeepSkyBlue;
+            this.barEnergy.Size = new System.Drawing.Size(100, 8);
+            this.barEnergy.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.barEnergy.TabIndex = 35;
+            this.barEnergy.Value = 100;
             // 
-            // customProgressBar3
+            // barHealth
             // 
-            this.customProgressBar3.Location = new System.Drawing.Point(200, 20);
-            this.customProgressBar3.Name = "customProgressBar3";
-            this.customProgressBar3.ProgressBarColor = System.Drawing.Color.Red;
-            this.customProgressBar3.Size = new System.Drawing.Size(140, 8);
-            this.customProgressBar3.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.customProgressBar3.TabIndex = 34;
-            this.customProgressBar3.Value = 100;
+            this.barHealth.Location = new System.Drawing.Point(200, 20);
+            this.barHealth.Name = "barHealth";
+            this.barHealth.ProgressBarColor = System.Drawing.Color.Red;
+            this.barHealth.Size = new System.Drawing.Size(140, 8);
+            this.barHealth.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.barHealth.TabIndex = 34;
+            this.barHealth.Value = 100;
             // 
-            // pictureBox6
+            // iconEnergy
             // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(157, 35);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(15, 15);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 33;
-            this.pictureBox6.TabStop = false;
+            this.iconEnergy.Image = ((System.Drawing.Image)(resources.GetObject("iconEnergy.Image")));
+            this.iconEnergy.Location = new System.Drawing.Point(157, 35);
+            this.iconEnergy.Name = "iconEnergy";
+            this.iconEnergy.Size = new System.Drawing.Size(15, 15);
+            this.iconEnergy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.iconEnergy.TabIndex = 33;
+            this.iconEnergy.TabStop = false;
             // 
-            // pictureBox7
+            // iconHealth
             // 
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(157, 15);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(15, 15);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 32;
-            this.pictureBox7.TabStop = false;
+            this.iconHealth.Image = ((System.Drawing.Image)(resources.GetObject("iconHealth.Image")));
+            this.iconHealth.Location = new System.Drawing.Point(157, 15);
+            this.iconHealth.Name = "iconHealth";
+            this.iconHealth.Size = new System.Drawing.Size(15, 15);
+            this.iconHealth.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.iconHealth.TabIndex = 32;
+            this.iconHealth.TabStop = false;
             // 
-            // lblMana
+            // lblEnergy
             // 
-            this.lblMana.AutoSize = true;
-            this.lblMana.Location = new System.Drawing.Point(173, 35);
-            this.lblMana.Name = "lblMana";
-            this.lblMana.Size = new System.Drawing.Size(23, 13);
-            this.lblMana.TabIndex = 31;
-            this.lblMana.Text = "MP";
+            this.lblEnergy.AutoSize = true;
+            this.lblEnergy.Location = new System.Drawing.Point(173, 35);
+            this.lblEnergy.Name = "lblEnergy";
+            this.lblEnergy.Size = new System.Drawing.Size(23, 13);
+            this.lblEnergy.TabIndex = 31;
+            this.lblEnergy.Text = "MP";
             // 
             // label5
             // 
@@ -182,11 +182,11 @@ namespace GameCharacterWinForms
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.customProgressBar4);
-            this.Controls.Add(this.customProgressBar3);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.lblMana);
+            this.Controls.Add(this.barEnergy);
+            this.Controls.Add(this.barHealth);
+            this.Controls.Add(this.iconEnergy);
+            this.Controls.Add(this.iconHealth);
+            this.Controls.Add(this.lblEnergy);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.pictureBox1);
@@ -198,8 +198,8 @@ namespace GameCharacterWinForms
             this.Name = "Form3";
             this.Text = "Form3";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconEnergy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconHealth)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -213,11 +213,11 @@ namespace GameCharacterWinForms
         private System.Windows.Forms.ListBox battleLog;
         private PictureBox pictureBox1;
         private Button btnMenu;
-        private Models.CustomProgressBar customProgressBar4;
-        private Models.CustomProgressBar customProgressBar3;
-        private PictureBox pictureBox6;
-        private PictureBox pictureBox7;
-        private Label lblMana;
+        private Models.CustomProgressBar barEnergy;
+        private Models.CustomProgressBar barHealth;
+        private PictureBox iconEnergy;
+        private PictureBox iconHealth;
+        private Label lblEnergy;
         private Label label5;
     }
 }
