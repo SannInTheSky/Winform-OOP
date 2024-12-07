@@ -84,14 +84,14 @@ namespace GameCharacterWinForms
         private void panelMage_Click(object sender, EventArgs e)
         {
             cmbCharacterType.SelectedItem = "Mage";
-            pictureSelectedClass.Image = Properties.Resources.warrior_txt;
+            txtpictureSelectedClass.Image = Properties.Resources.mage_txt;
             pictureSelectedClass.Image = Properties.Resources.wizard_hat;
         }
 
         private void panelWarrior_Click(object sender, EventArgs e)
         {
             cmbCharacterType.SelectedItem = "Warrior";
-            pictureSelectedClass.Image = Properties.Resources.mage_txt;
+            txtpictureSelectedClass.Image = Properties.Resources.warrior_txt;
             pictureSelectedClass.Image = Properties.Resources.sword__3_;
         }
 
