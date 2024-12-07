@@ -209,5 +209,8 @@
   <ItemGroup>
     <None Include="64 X 64 Female Warrior\64 X 64 Female Warrior\Warrior Char.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Battleground.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

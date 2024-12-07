@@ -41,8 +41,6 @@ namespace GameCharacterWinForms
             this.lblEnergy = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.gboxStatus = new System.Windows.Forms.GroupBox();
-            this.barEnergy = new GameCharacterWinForms.Models.CustomProgressBar();
-            this.barHealth = new GameCharacterWinForms.Models.CustomProgressBar();
             this.iconStatus3 = new System.Windows.Forms.PictureBox();
             this.iconStatus2 = new System.Windows.Forms.PictureBox();
             this.iconStatus1 = new System.Windows.Forms.PictureBox();
@@ -50,6 +48,8 @@ namespace GameCharacterWinForms
             this.iconStatus6 = new System.Windows.Forms.PictureBox();
             this.iconStatus5 = new System.Windows.Forms.PictureBox();
             this.iconStatus4 = new System.Windows.Forms.PictureBox();
+            this.barEnergy = new GameCharacterWinForms.Models.CustomProgressBar();
+            this.barHealth = new GameCharacterWinForms.Models.CustomProgressBar();
             this.iconEnergy = new System.Windows.Forms.PictureBox();
             this.iconHealth = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -131,18 +131,24 @@ namespace GameCharacterWinForms
             // lblEnergy
             // 
             this.lblEnergy.AutoSize = true;
+            this.lblEnergy.BackColor = System.Drawing.Color.Transparent;
+            this.lblEnergy.Font = new System.Drawing.Font("Milker", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEnergy.ForeColor = System.Drawing.Color.White;
             this.lblEnergy.Location = new System.Drawing.Point(173, 35);
             this.lblEnergy.Name = "lblEnergy";
-            this.lblEnergy.Size = new System.Drawing.Size(23, 13);
+            this.lblEnergy.Size = new System.Drawing.Size(26, 15);
             this.lblEnergy.TabIndex = 31;
             this.lblEnergy.Text = "MP";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Milker", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(173, 15);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(22, 13);
+            this.label5.Size = new System.Drawing.Size(25, 15);
             this.label5.TabIndex = 30;
             this.label5.Text = "HP";
             // 
@@ -163,26 +169,6 @@ namespace GameCharacterWinForms
             this.gboxStatus.TabIndex = 36;
             this.gboxStatus.TabStop = false;
             this.gboxStatus.Text = "STATUS";
-            // 
-            // barEnergy
-            // 
-            this.barEnergy.Location = new System.Drawing.Point(200, 39);
-            this.barEnergy.Name = "barEnergy";
-            this.barEnergy.ProgressBarColor = System.Drawing.Color.DeepSkyBlue;
-            this.barEnergy.Size = new System.Drawing.Size(100, 8);
-            this.barEnergy.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.barEnergy.TabIndex = 35;
-            this.barEnergy.Value = 100;
-            // 
-            // barHealth
-            // 
-            this.barHealth.Location = new System.Drawing.Point(200, 20);
-            this.barHealth.Name = "barHealth";
-            this.barHealth.ProgressBarColor = System.Drawing.Color.Red;
-            this.barHealth.Size = new System.Drawing.Size(140, 8);
-            this.barHealth.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.barHealth.TabIndex = 34;
-            this.barHealth.Value = 100;
             // 
             // iconStatus3
             // 
@@ -254,8 +240,29 @@ namespace GameCharacterWinForms
             this.iconStatus4.TabIndex = 37;
             this.iconStatus4.TabStop = false;
             // 
+            // barEnergy
+            // 
+            this.barEnergy.Location = new System.Drawing.Point(200, 39);
+            this.barEnergy.Name = "barEnergy";
+            this.barEnergy.ProgressBarColor = System.Drawing.Color.DeepSkyBlue;
+            this.barEnergy.Size = new System.Drawing.Size(100, 8);
+            this.barEnergy.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.barEnergy.TabIndex = 35;
+            this.barEnergy.Value = 100;
+            // 
+            // barHealth
+            // 
+            this.barHealth.Location = new System.Drawing.Point(200, 20);
+            this.barHealth.Name = "barHealth";
+            this.barHealth.ProgressBarColor = System.Drawing.Color.Red;
+            this.barHealth.Size = new System.Drawing.Size(140, 8);
+            this.barHealth.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.barHealth.TabIndex = 34;
+            this.barHealth.Value = 100;
+            // 
             // iconEnergy
             // 
+            this.iconEnergy.BackColor = System.Drawing.Color.Transparent;
             this.iconEnergy.Image = ((System.Drawing.Image)(resources.GetObject("iconEnergy.Image")));
             this.iconEnergy.Location = new System.Drawing.Point(157, 35);
             this.iconEnergy.Name = "iconEnergy";
@@ -266,6 +273,7 @@ namespace GameCharacterWinForms
             // 
             // iconHealth
             // 
+            this.iconHealth.BackColor = System.Drawing.Color.Transparent;
             this.iconHealth.Image = ((System.Drawing.Image)(resources.GetObject("iconHealth.Image")));
             this.iconHealth.Location = new System.Drawing.Point(157, 15);
             this.iconHealth.Name = "iconHealth";
@@ -287,6 +295,8 @@ namespace GameCharacterWinForms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::GameCharacterWinForms.Properties.Resources.Battleground1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.gboxStatus);
             this.Controls.Add(this.barEnergy);
