@@ -84,15 +84,51 @@ namespace GameCharacterWinForms
         private void panelMage_Click(object sender, EventArgs e)
         {
             cmbCharacterType.SelectedItem = "Mage";
-            lblSelectedClass.Text = "Mage";
+            pictureSelectedClass.Image = Properties.Resources.warrior_txt;
             pictureSelectedClass.Image = Properties.Resources.wizard_hat;
         }
 
         private void panelWarrior_Click(object sender, EventArgs e)
         {
             cmbCharacterType.SelectedItem = "Warrior";
-            lblSelectedClass.Text = "Warrior";
+            pictureSelectedClass.Image = Properties.Resources.mage_txt;
             pictureSelectedClass.Image = Properties.Resources.sword__3_;
+        }
+
+        private void panelWarrior_MouseHover(object sender, EventArgs e)
+        {
+            Panel panel = sender as Panel;
+            if (panel != null)
+            {
+                panel.BackColor = Color.Gray; 
+            }
+        }
+
+        private void panelWarrior_MouseLeave(object sender, EventArgs e)
+        {
+            Panel panel = sender as Panel;
+            if (panel != null)
+            {
+                panel.BackColor = Color.LightGreen; 
+            }
+        }
+
+        private void panelMage_MouseHover(object sender, EventArgs e)
+        {
+            Panel panel = sender as Panel;
+            if (panel != null)
+            {
+                panel.BackColor = Color.Gray; 
+            }
+        }
+
+        private void panelMage_MouseLeave(object sender, EventArgs e)
+        {
+            Panel panel = sender as Panel;
+            if (panel != null)
+            {
+                panel.BackColor = Color.PaleTurquoise;
+            }
         }
     }
 }

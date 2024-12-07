@@ -203,6 +203,16 @@ namespace GameCharacterWinForms.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mage_txt {
+            get {
+                object obj = ResourceManager.GetObject("mage_txt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap magic {
             get {
                 object obj = ResourceManager.GetObject("magic", resourceCulture);
@@ -396,6 +406,16 @@ namespace GameCharacterWinForms.Properties {
         internal static System.Drawing.Bitmap Warrior_Char {
             get {
                 object obj = ResourceManager.GetObject("Warrior Char", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap warrior_txt {
+            get {
+                object obj = ResourceManager.GetObject("warrior_txt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
