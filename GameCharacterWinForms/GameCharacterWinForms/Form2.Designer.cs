@@ -216,9 +216,11 @@
             // 
             // pictureBox10
             // 
+            this.pictureBox10.Image = global::GameCharacterWinForms.Properties.Resources.Mage_Char;
             this.pictureBox10.Location = new System.Drawing.Point(13, 20);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(157, 175);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox10.TabIndex = 0;
             this.pictureBox10.TabStop = false;
             // 
@@ -336,18 +338,18 @@
             // 
             this.panelWarrior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panelWarrior.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelWarrior.Controls.Add(this.pictureBox5);
+            this.panelWarrior.Controls.Add(this.pictureBox4);
+            this.panelWarrior.Controls.Add(this.lblWarriorDescription);
+            this.panelWarrior.Controls.Add(this.pictureBox3);
+            this.panelWarrior.Controls.Add(this.pictureBox2);
             this.panelWarrior.Controls.Add(this.customProgressBar2);
             this.panelWarrior.Controls.Add(this.pictureBox1);
-            this.panelWarrior.Controls.Add(this.lblWarriorDescription);
             this.panelWarrior.Controls.Add(this.customProgressBar1);
             this.panelWarrior.Controls.Add(this.lblArmor);
             this.panelWarrior.Controls.Add(this.lblWarriorLevel);
-            this.panelWarrior.Controls.Add(this.pictureBox2);
-            this.panelWarrior.Controls.Add(this.pictureBox5);
             this.panelWarrior.Controls.Add(this.lblStrength);
             this.panelWarrior.Controls.Add(this.lblHealth);
-            this.panelWarrior.Controls.Add(this.pictureBox3);
-            this.panelWarrior.Controls.Add(this.pictureBox4);
             this.panelWarrior.Controls.Add(this.lblStamina);
             this.panelWarrior.Location = new System.Drawing.Point(43, 88);
             this.panelWarrior.Name = "panelWarrior";
@@ -367,9 +369,11 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(13, 19);
+            this.pictureBox1.Image = global::GameCharacterWinForms.Properties.Resources.Warrior_Char;
+            this.pictureBox1.Location = new System.Drawing.Point(6, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(157, 175);
+            this.pictureBox1.Size = new System.Drawing.Size(170, 183);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 

@@ -200,5 +200,14 @@
   <ItemGroup>
     <None Include="Assets\SelecChar.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="64 X 64 Ancient mage\64 X 64 Ancient mage\Priview animation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="64 X 64 Ancient mage\64 X 64 Ancient mage\Mage Char.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="64 X 64 Female Warrior\64 X 64 Female Warrior\Warrior Char.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

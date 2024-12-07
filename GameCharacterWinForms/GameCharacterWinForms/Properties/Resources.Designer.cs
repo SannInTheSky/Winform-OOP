@@ -173,6 +173,16 @@ namespace GameCharacterWinForms.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Mage_Char {
+            get {
+                object obj = ResourceManager.GetObject("Mage Char", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap magic {
             get {
                 object obj = ResourceManager.GetObject("magic", resourceCulture);
@@ -216,6 +226,16 @@ namespace GameCharacterWinForms.Properties {
         internal static System.Drawing.Bitmap people {
             get {
                 object obj = ResourceManager.GetObject("people", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Priview_animation {
+            get {
+                object obj = ResourceManager.GetObject("Priview animation", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -346,6 +366,16 @@ namespace GameCharacterWinForms.Properties {
         internal static System.Drawing.Bitmap viking {
             get {
                 object obj = ResourceManager.GetObject("viking", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Warrior_Char {
+            get {
+                object obj = ResourceManager.GetObject("Warrior Char", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
