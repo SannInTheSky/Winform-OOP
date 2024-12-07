@@ -218,5 +218,23 @@
   <ItemGroup>
     <None Include="Assets\mage_txt.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="64 X 64 Ancient mage\64 X 64 Ancient mage\Sprites and files\Animation\Attack animation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="64 X 64 Ancient mage\64 X 64 Ancient mage\Sprites and files\Animation\IDLE animation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="64 X 64 Ancient mage\64 X 64 Ancient mage\Sprites and files\Animation\Mage_Attack_animation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="64 X 64 Ancient mage\64 X 64 Ancient mage\Sprites and files\Animation\Mage_IDLE_animation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="64 X 64 Female Warrior\64 X 64 Female Warrior\Sprites and files\Animation\Warrior_Attack_animation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="64 X 64 Female Warrior\64 X 64 Female Warrior\Sprites and files\Animation\Warrior_IDLE_animation.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

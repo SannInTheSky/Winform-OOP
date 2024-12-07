@@ -31,6 +31,7 @@ namespace GameCharacterWinForms
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.txtCharacterDetails = new System.Windows.Forms.TextBox();
             this.btnAttack = new System.Windows.Forms.Button();
@@ -48,11 +49,14 @@ namespace GameCharacterWinForms
             this.iconStatus6 = new System.Windows.Forms.PictureBox();
             this.iconStatus5 = new System.Windows.Forms.PictureBox();
             this.iconStatus4 = new System.Windows.Forms.PictureBox();
-            this.barEnergy = new GameCharacterWinForms.Models.CustomProgressBar();
-            this.barHealth = new GameCharacterWinForms.Models.CustomProgressBar();
             this.iconEnergy = new System.Windows.Forms.PictureBox();
             this.iconHealth = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.CharacterIdle = new System.Windows.Forms.PictureBox();
+            this.CharacterAction = new System.Windows.Forms.PictureBox();
+            this.animationTimer = new System.Windows.Forms.Timer(this.components);
+            this.barEnergy = new GameCharacterWinForms.Models.CustomProgressBar();
+            this.barHealth = new GameCharacterWinForms.Models.CustomProgressBar();
             this.gboxStatus.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconStatus3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconStatus2)).BeginInit();
@@ -64,6 +68,8 @@ namespace GameCharacterWinForms
             ((System.ComponentModel.ISupportInitialize)(this.iconEnergy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconHealth)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CharacterIdle)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CharacterAction)).BeginInit();
             this.SuspendLayout();
             // 
             // txtCharacterDetails
@@ -132,7 +138,7 @@ namespace GameCharacterWinForms
             // 
             this.lblEnergy.AutoSize = true;
             this.lblEnergy.BackColor = System.Drawing.Color.Transparent;
-            this.lblEnergy.Font = new System.Drawing.Font("Milker", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEnergy.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEnergy.ForeColor = System.Drawing.Color.White;
             this.lblEnergy.Location = new System.Drawing.Point(173, 35);
             this.lblEnergy.Name = "lblEnergy";
@@ -144,11 +150,11 @@ namespace GameCharacterWinForms
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Milker", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(173, 15);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(25, 15);
+            this.label5.Size = new System.Drawing.Size(24, 15);
             this.label5.TabIndex = 30;
             this.label5.Text = "HP";
             // 
@@ -240,26 +246,6 @@ namespace GameCharacterWinForms
             this.iconStatus4.TabIndex = 37;
             this.iconStatus4.TabStop = false;
             // 
-            // barEnergy
-            // 
-            this.barEnergy.Location = new System.Drawing.Point(200, 39);
-            this.barEnergy.Name = "barEnergy";
-            this.barEnergy.ProgressBarColor = System.Drawing.Color.DeepSkyBlue;
-            this.barEnergy.Size = new System.Drawing.Size(100, 8);
-            this.barEnergy.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.barEnergy.TabIndex = 35;
-            this.barEnergy.Value = 100;
-            // 
-            // barHealth
-            // 
-            this.barHealth.Location = new System.Drawing.Point(200, 20);
-            this.barHealth.Name = "barHealth";
-            this.barHealth.ProgressBarColor = System.Drawing.Color.Red;
-            this.barHealth.Size = new System.Drawing.Size(140, 8);
-            this.barHealth.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.barHealth.TabIndex = 34;
-            this.barHealth.Value = 100;
-            // 
             // iconEnergy
             // 
             this.iconEnergy.BackColor = System.Drawing.Color.Transparent;
@@ -291,13 +277,65 @@ namespace GameCharacterWinForms
             this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
             // 
+            // CharacterIdle
+            // 
+            this.CharacterIdle.BackColor = System.Drawing.Color.Transparent;
+            this.CharacterIdle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.CharacterIdle.Image = global::GameCharacterWinForms.Properties.Resources.Mage_IDLE_animation;
+            this.CharacterIdle.Location = new System.Drawing.Point(167, 161);
+            this.CharacterIdle.Name = "CharacterIdle";
+            this.CharacterIdle.Size = new System.Drawing.Size(164, 157);
+            this.CharacterIdle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.CharacterIdle.TabIndex = 37;
+            this.CharacterIdle.TabStop = false;
+            // 
+            // CharacterAction
+            // 
+            this.CharacterAction.BackColor = System.Drawing.Color.Transparent;
+            this.CharacterAction.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.CharacterAction.Image = global::GameCharacterWinForms.Properties.Resources.Mage_IDLE_animation;
+            this.CharacterAction.Location = new System.Drawing.Point(167, 161);
+            this.CharacterAction.Name = "CharacterAction";
+            this.CharacterAction.Size = new System.Drawing.Size(164, 157);
+            this.CharacterAction.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.CharacterAction.TabIndex = 38;
+            this.CharacterAction.TabStop = false;
+            this.CharacterAction.Visible = false;
+            // 
+            // animationTimer
+            // 
+            this.animationTimer.Interval = 1000;
+            this.animationTimer.Tick += new System.EventHandler(this.animationTimer_Tick);
+            // 
+            // barEnergy
+            // 
+            this.barEnergy.Location = new System.Drawing.Point(200, 39);
+            this.barEnergy.Name = "barEnergy";
+            this.barEnergy.ProgressBarColor = System.Drawing.Color.DeepSkyBlue;
+            this.barEnergy.Size = new System.Drawing.Size(100, 8);
+            this.barEnergy.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.barEnergy.TabIndex = 35;
+            this.barEnergy.Value = 100;
+            // 
+            // barHealth
+            // 
+            this.barHealth.Location = new System.Drawing.Point(200, 20);
+            this.barHealth.Name = "barHealth";
+            this.barHealth.ProgressBarColor = System.Drawing.Color.Red;
+            this.barHealth.Size = new System.Drawing.Size(140, 8);
+            this.barHealth.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.barHealth.TabIndex = 34;
+            this.barHealth.Value = 100;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::GameCharacterWinForms.Properties.Resources.Battleground1;
+            this.BackgroundImage = global::GameCharacterWinForms.Properties.Resources.Battleground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.CharacterIdle);
+            this.Controls.Add(this.CharacterAction);
             this.Controls.Add(this.gboxStatus);
             this.Controls.Add(this.barEnergy);
             this.Controls.Add(this.barHealth);
@@ -311,8 +349,10 @@ namespace GameCharacterWinForms
             this.Controls.Add(this.btnLevelUp);
             this.Controls.Add(this.btnDefend);
             this.Controls.Add(this.btnAttack);
+            this.DoubleBuffered = true;
             this.Name = "Form3";
             this.Text = "Form3";
+            this.Load += new System.EventHandler(this.Form3_Load);
             this.gboxStatus.ResumeLayout(false);
             this.gboxStatus.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconStatus3)).EndInit();
@@ -325,6 +365,8 @@ namespace GameCharacterWinForms
             ((System.ComponentModel.ISupportInitialize)(this.iconEnergy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconHealth)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CharacterIdle)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CharacterAction)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -352,5 +394,8 @@ namespace GameCharacterWinForms
         private PictureBox iconStatus2;
         private PictureBox iconStatus1;
         private PictureBox iconStatus3;
+        private PictureBox CharacterIdle;
+        private PictureBox CharacterAction;
+        private Timer animationTimer;
     }
 }

@@ -193,9 +193,29 @@ namespace GameCharacterWinForms.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Mage_Attack_animation {
+            get {
+                object obj = ResourceManager.GetObject("Mage_Attack_animation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Mage_Char {
             get {
                 object obj = ResourceManager.GetObject("Mage Char", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Mage_IDLE_animation {
+            get {
+                object obj = ResourceManager.GetObject("Mage_IDLE_animation", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -403,9 +423,39 @@ namespace GameCharacterWinForms.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Warrior_Attack_animation {
+            get {
+                object obj = ResourceManager.GetObject("Warrior_Attack_animation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Warrior_Char {
             get {
                 object obj = ResourceManager.GetObject("Warrior Char", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Warrior_Char1 {
+            get {
+                object obj = ResourceManager.GetObject("Warrior Char1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Warrior_IDLE_animation {
+            get {
+                object obj = ResourceManager.GetObject("Warrior_IDLE_animation", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
