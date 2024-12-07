@@ -130,5 +130,23 @@ namespace GameCharacterWinForms
                 panel.BackColor = Color.PaleTurquoise;
             }
         }
+
+        private void txtName_Enter(object sender, EventArgs e)
+        {
+            if (txtName.Text == "Enter Name")
+            {
+                txtName.Text = "";
+                txtName.ForeColor = Color.Black; 
+            }
+        }
+
+        private void txtName_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtName.Text))
+            {
+                txtName.Text = "Enter Name";
+                txtName.ForeColor = Color.Gray; 
+            }
+        }
     }
 }
