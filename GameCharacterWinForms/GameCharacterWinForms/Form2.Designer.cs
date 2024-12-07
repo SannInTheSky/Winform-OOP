@@ -51,7 +51,6 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.lblMana = new System.Windows.Forms.Label();
             this.panelWarrior = new GameCharacterWinForms.Models.ClickablePanel();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.lblWarriorDescription = new System.Windows.Forms.Label();
@@ -65,6 +64,7 @@
             this.lblStrength = new System.Windows.Forms.Label();
             this.lblHealth = new System.Windows.Forms.Label();
             this.lblStamina = new System.Windows.Forms.Label();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.warriortxt = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureSelectedClass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
@@ -77,12 +77,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panelWarrior.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.warriortxt)).BeginInit();
             this.SuspendLayout();
             // 
@@ -105,7 +105,10 @@
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(199, 24);
             this.txtName.TabIndex = 16;
+            this.txtName.Tag = "";
             this.txtName.Text = "Enter Name";
+            this.txtName.Enter += new System.EventHandler(this.txtName_Enter);
+            this.txtName.Leave += new System.EventHandler(this.txtName_Leave);
             // 
             // cmbCharacterType
             // 
@@ -343,17 +346,6 @@
             this.panelWarrior.MouseLeave += new System.EventHandler(this.panelWarrior_MouseLeave);
             this.panelWarrior.MouseHover += new System.EventHandler(this.panelWarrior_MouseHover);
             // 
-            // pictureBox14
-            // 
-            this.pictureBox14.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox14.Image = global::GameCharacterWinForms.Properties.Resources.mage_txt;
-            this.pictureBox14.Location = new System.Drawing.Point(247, 297);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(306, 61);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox14.TabIndex = 26;
-            this.pictureBox14.TabStop = false;
-            // 
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
@@ -484,6 +476,17 @@
             this.lblStamina.TabIndex = 3;
             this.lblStamina.Text = "SP";
             // 
+            // pictureBox14
+            // 
+            this.pictureBox14.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox14.Image = global::GameCharacterWinForms.Properties.Resources.mage_txt;
+            this.pictureBox14.Location = new System.Drawing.Point(247, 297);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(306, 61);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox14.TabIndex = 26;
+            this.pictureBox14.TabStop = false;
+            // 
             // warriortxt
             // 
             this.warriortxt.BackColor = System.Drawing.Color.Transparent;
@@ -529,12 +532,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.panelWarrior.ResumeLayout(false);
             this.panelWarrior.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.warriortxt)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
