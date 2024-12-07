@@ -273,6 +273,16 @@ namespace GameCharacterWinForms.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Ninja_IDLE {
+            get {
+                object obj = ResourceManager.GetObject("Ninja IDLE", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap people {
             get {
                 object obj = ResourceManager.GetObject("people", resourceCulture);
@@ -416,6 +426,16 @@ namespace GameCharacterWinForms.Properties {
         internal static System.Drawing.Bitmap viking {
             get {
                 object obj = ResourceManager.GetObject("viking", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap villain {
+            get {
+                object obj = ResourceManager.GetObject("villain", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

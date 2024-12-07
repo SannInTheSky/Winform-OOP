@@ -57,6 +57,7 @@ namespace GameCharacterWinForms
             this.animationTimer = new System.Windows.Forms.Timer(this.components);
             this.barEnergy = new GameCharacterWinForms.Models.CustomProgressBar();
             this.barHealth = new GameCharacterWinForms.Models.CustomProgressBar();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.gboxStatus.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconStatus3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconStatus2)).BeginInit();
@@ -70,6 +71,7 @@ namespace GameCharacterWinForms
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CharacterIdle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CharacterAction)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // txtCharacterDetails
@@ -327,6 +329,17 @@ namespace GameCharacterWinForms
             this.barHealth.TabIndex = 34;
             this.barHealth.Value = 100;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::GameCharacterWinForms.Properties.Resources.villain;
+            this.pictureBox2.Location = new System.Drawing.Point(421, 35);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(446, 311);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 39;
+            this.pictureBox2.TabStop = false;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -349,6 +362,7 @@ namespace GameCharacterWinForms
             this.Controls.Add(this.btnLevelUp);
             this.Controls.Add(this.btnDefend);
             this.Controls.Add(this.btnAttack);
+            this.Controls.Add(this.pictureBox2);
             this.DoubleBuffered = true;
             this.Name = "Form3";
             this.Text = "Form3";
@@ -367,6 +381,7 @@ namespace GameCharacterWinForms
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CharacterIdle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CharacterAction)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -397,5 +412,6 @@ namespace GameCharacterWinForms
         private PictureBox CharacterIdle;
         private PictureBox CharacterAction;
         private Timer animationTimer;
+        private PictureBox pictureBox2;
     }
 }

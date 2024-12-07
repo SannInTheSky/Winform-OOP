@@ -236,5 +236,11 @@
   <ItemGroup>
     <None Include="64 X 64 Female Warrior\64 X 64 Female Warrior\Sprites and files\Animation\Warrior_IDLE_animation.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Ninja_Free%28FIXED%29\Ninja_Free%28FIXED%29\Ninja IDLE.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Ninja_Free%28FIXED%29\Ninja_Free%28FIXED%29\villain.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
