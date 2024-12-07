@@ -36,6 +36,7 @@
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.txtpictureSelectedClass = new System.Windows.Forms.PictureBox();
             this.panelMage = new GameCharacterWinForms.Models.ClickablePanel();
             this.customProgressBar4 = new GameCharacterWinForms.Models.CustomProgressBar();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
@@ -51,7 +52,6 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.lblMana = new System.Windows.Forms.Label();
             this.panelWarrior = new GameCharacterWinForms.Models.ClickablePanel();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.lblWarriorDescription = new System.Windows.Forms.Label();
@@ -65,11 +65,11 @@
             this.lblStrength = new System.Windows.Forms.Label();
             this.lblHealth = new System.Windows.Forms.Label();
             this.lblStamina = new System.Windows.Forms.Label();
-            this.warriortxt = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureSelectedClass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtpictureSelectedClass)).BeginInit();
             this.panelMage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -77,19 +77,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panelWarrior.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.warriortxt)).BeginInit();
             this.SuspendLayout();
             // 
             // btnToBattle
             // 
             this.btnToBattle.BackColor = System.Drawing.SystemColors.Control;
-            this.btnToBattle.Font = new System.Drawing.Font("Montgomery", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnToBattle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnToBattle.Location = new System.Drawing.Point(298, 389);
             this.btnToBattle.Name = "btnToBattle";
             this.btnToBattle.Size = new System.Drawing.Size(199, 42);
@@ -121,6 +119,7 @@
             // pictureSelectedClass
             // 
             this.pictureSelectedClass.BackColor = System.Drawing.Color.Transparent;
+            this.pictureSelectedClass.Image = global::GameCharacterWinForms.Properties.Resources.sword__3_;
             this.pictureSelectedClass.Location = new System.Drawing.Point(304, 307);
             this.pictureSelectedClass.Name = "pictureSelectedClass";
             this.pictureSelectedClass.Size = new System.Drawing.Size(33, 31);
@@ -160,6 +159,17 @@
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox13.TabIndex = 21;
             this.pictureBox13.TabStop = false;
+            // 
+            // txtpictureSelectedClass
+            // 
+            this.txtpictureSelectedClass.BackColor = System.Drawing.Color.Transparent;
+            this.txtpictureSelectedClass.Image = global::GameCharacterWinForms.Properties.Resources.warrior_txt;
+            this.txtpictureSelectedClass.Location = new System.Drawing.Point(279, 300);
+            this.txtpictureSelectedClass.Name = "txtpictureSelectedClass";
+            this.txtpictureSelectedClass.Size = new System.Drawing.Size(263, 49);
+            this.txtpictureSelectedClass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.txtpictureSelectedClass.TabIndex = 25;
+            this.txtpictureSelectedClass.TabStop = false;
             // 
             // panelMage
             // 
@@ -280,10 +290,10 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Milker", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(197, 23);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(24, 14);
+            this.label5.Size = new System.Drawing.Size(22, 13);
             this.label5.TabIndex = 2;
             this.label5.Text = "HP";
             // 
@@ -310,10 +320,10 @@
             // lblMana
             // 
             this.lblMana.AutoSize = true;
-            this.lblMana.Font = new System.Drawing.Font("Milker", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMana.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMana.Location = new System.Drawing.Point(197, 43);
             this.lblMana.Name = "lblMana";
-            this.lblMana.Size = new System.Drawing.Size(25, 14);
+            this.lblMana.Size = new System.Drawing.Size(23, 13);
             this.lblMana.TabIndex = 3;
             this.lblMana.Text = "MP";
             // 
@@ -342,17 +352,6 @@
             this.panelWarrior.Click += new System.EventHandler(this.panelWarrior_Click);
             this.panelWarrior.MouseLeave += new System.EventHandler(this.panelWarrior_MouseLeave);
             this.panelWarrior.MouseHover += new System.EventHandler(this.panelWarrior_MouseHover);
-            // 
-            // pictureBox14
-            // 
-            this.pictureBox14.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox14.Image = global::GameCharacterWinForms.Properties.Resources.mage_txt;
-            this.pictureBox14.Location = new System.Drawing.Point(247, 297);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(306, 61);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox14.TabIndex = 26;
-            this.pictureBox14.TabStop = false;
             // 
             // pictureBox5
             // 
@@ -467,33 +466,22 @@
             // lblHealth
             // 
             this.lblHealth.AutoSize = true;
-            this.lblHealth.Font = new System.Drawing.Font("Milker", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHealth.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHealth.Location = new System.Drawing.Point(197, 22);
             this.lblHealth.Name = "lblHealth";
-            this.lblHealth.Size = new System.Drawing.Size(24, 14);
+            this.lblHealth.Size = new System.Drawing.Size(22, 13);
             this.lblHealth.TabIndex = 2;
             this.lblHealth.Text = "HP";
             // 
             // lblStamina
             // 
             this.lblStamina.AutoSize = true;
-            this.lblStamina.Font = new System.Drawing.Font("Milker", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStamina.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStamina.Location = new System.Drawing.Point(197, 42);
             this.lblStamina.Name = "lblStamina";
-            this.lblStamina.Size = new System.Drawing.Size(23, 14);
+            this.lblStamina.Size = new System.Drawing.Size(21, 13);
             this.lblStamina.TabIndex = 3;
             this.lblStamina.Text = "SP";
-            // 
-            // warriortxt
-            // 
-            this.warriortxt.BackColor = System.Drawing.Color.Transparent;
-            this.warriortxt.Image = global::GameCharacterWinForms.Properties.Resources.warrior_txt;
-            this.warriortxt.Location = new System.Drawing.Point(279, 300);
-            this.warriortxt.Name = "warriortxt";
-            this.warriortxt.Size = new System.Drawing.Size(263, 49);
-            this.warriortxt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.warriortxt.TabIndex = 25;
-            this.warriortxt.TabStop = false;
             // 
             // Form2
             // 
@@ -512,14 +500,14 @@
             this.Controls.Add(this.panelWarrior);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.pictureBox13);
-            this.Controls.Add(this.warriortxt);
-            this.Controls.Add(this.pictureBox14);
+            this.Controls.Add(this.txtpictureSelectedClass);
             this.Name = "Form2";
             this.Text = "Form2";
             ((System.ComponentModel.ISupportInitialize)(this.pictureSelectedClass)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtpictureSelectedClass)).EndInit();
             this.panelMage.ResumeLayout(false);
             this.panelMage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
@@ -529,13 +517,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.panelWarrior.ResumeLayout(false);
             this.panelWarrior.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.warriortxt)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -578,7 +564,6 @@
         private System.Windows.Forms.ComboBox cmbCharacterType;
         private System.Windows.Forms.PictureBox pictureSelectedClass;
         private System.Windows.Forms.PictureBox pictureBox13;
-        private System.Windows.Forms.PictureBox warriortxt;
-        private System.Windows.Forms.PictureBox pictureBox14;
+        private System.Windows.Forms.PictureBox txtpictureSelectedClass;
     }
 }
