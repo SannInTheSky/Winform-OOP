@@ -126,6 +126,7 @@
             this.pictureSelectedClass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureSelectedClass.TabIndex = 21;
             this.pictureSelectedClass.TabStop = false;
+            this.pictureSelectedClass.Visible = false;
             // 
             // pictureBox12
             // 
@@ -170,6 +171,7 @@
             this.txtpictureSelectedClass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.txtpictureSelectedClass.TabIndex = 25;
             this.txtpictureSelectedClass.TabStop = false;
+            this.txtpictureSelectedClass.Visible = false;
             // 
             // panelMage
             // 
@@ -503,6 +505,7 @@
             this.Controls.Add(this.txtpictureSelectedClass);
             this.Name = "Form2";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureSelectedClass)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();

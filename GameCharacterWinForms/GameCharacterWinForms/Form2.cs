@@ -84,15 +84,21 @@ namespace GameCharacterWinForms
         private void panelMage_Click(object sender, EventArgs e)
         {
             cmbCharacterType.SelectedItem = "Mage";
+
             txtpictureSelectedClass.Image = Properties.Resources.mage_txt;
+            txtpictureSelectedClass.Visible = true;
             pictureSelectedClass.Image = Properties.Resources.wizard_hat;
+            pictureSelectedClass.Visible = true;
         }
 
         private void panelWarrior_Click(object sender, EventArgs e)
         {
             cmbCharacterType.SelectedItem = "Warrior";
+
             txtpictureSelectedClass.Image = Properties.Resources.warrior_txt;
+            txtpictureSelectedClass.Visible = true;
             pictureSelectedClass.Image = Properties.Resources.sword__3_;
+            pictureSelectedClass.Visible = true;
         }
 
         private void panelWarrior_MouseHover(object sender, EventArgs e)
@@ -147,6 +153,11 @@ namespace GameCharacterWinForms
                 txtName.Text = "Enter Name";
                 txtName.ForeColor = Color.Gray; 
             }
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

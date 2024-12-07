@@ -1,33 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\HP\\Desktop\\OOP\\WinForm\\Winform-OOP\\GameCharacterWinForms\\",
+  "WorkspaceRootPath": "E:\\_My Documents\\repositories\\Winform-OOP\\GameCharacterWinForms\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{46BEFFF4-4662-4BD2-802A-803DE26B81F1}|GameCharacterWinForms\\GameCharacterWinForms.csproj|c:\\users\\hp\\desktop\\oop\\winform\\winform-oop\\gamecharacterwinforms\\gamecharacterwinforms\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{46BEFFF4-4662-4BD2-802A-803DE26B81F1}|GameCharacterWinForms\\GameCharacterWinForms.csproj|solutionrelative:gamecharacterwinforms\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46BEFFF4-4662-4BD2-802A-803DE26B81F1}|GameCharacterWinForms\\GameCharacterWinForms.csproj|C:\\Users\\HP\\Desktop\\OOP\\WinForm\\Winform-OOP\\GameCharacterWinForms\\gamecharacterwinforms\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{46BEFFF4-4662-4BD2-802A-803DE26B81F1}|GameCharacterWinForms\\GameCharacterWinForms.csproj|solutionrelative:gamecharacterwinforms\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46BEFFF4-4662-4BD2-802A-803DE26B81F1}|GameCharacterWinForms\\GameCharacterWinForms.csproj|C:\\Users\\HP\\Desktop\\OOP\\WinForm\\Winform-OOP\\GameCharacterWinForms\\gamecharacterwinforms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{46BEFFF4-4662-4BD2-802A-803DE26B81F1}|GameCharacterWinForms\\GameCharacterWinForms.csproj|solutionrelative:gamecharacterwinforms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46BEFFF4-4662-4BD2-802A-803DE26B81F1}|GameCharacterWinForms\\GameCharacterWinForms.csproj|C:\\Users\\HP\\Desktop\\OOP\\WinForm\\Winform-OOP\\GameCharacterWinForms\\gamecharacterwinforms\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{46BEFFF4-4662-4BD2-802A-803DE26B81F1}|GameCharacterWinForms\\GameCharacterWinForms.csproj|E:\\_My Documents\\repositories\\Winform-OOP\\GameCharacterWinForms\\gamecharacterwinforms\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46BEFFF4-4662-4BD2-802A-803DE26B81F1}|GameCharacterWinForms\\GameCharacterWinForms.csproj|solutionrelative:gamecharacterwinforms\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46BEFFF4-4662-4BD2-802A-803DE26B81F1}|GameCharacterWinForms\\GameCharacterWinForms.csproj|C:\\Users\\HP\\Desktop\\OOP\\WinForm\\Winform-OOP\\GameCharacterWinForms\\gamecharacterwinforms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{46BEFFF4-4662-4BD2-802A-803DE26B81F1}|GameCharacterWinForms\\GameCharacterWinForms.csproj|E:\\_My Documents\\repositories\\Winform-OOP\\GameCharacterWinForms\\gamecharacterwinforms\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{46BEFFF4-4662-4BD2-802A-803DE26B81F1}|GameCharacterWinForms\\GameCharacterWinForms.csproj|solutionrelative:gamecharacterwinforms\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46BEFFF4-4662-4BD2-802A-803DE26B81F1}|GameCharacterWinForms\\GameCharacterWinForms.csproj|e:\\_my documents\\repositories\\winform-oop\\gamecharacterwinforms\\gamecharacterwinforms\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{46BEFFF4-4662-4BD2-802A-803DE26B81F1}|GameCharacterWinForms\\GameCharacterWinForms.csproj|solutionrelative:gamecharacterwinforms\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46BEFFF4-4662-4BD2-802A-803DE26B81F1}|GameCharacterWinForms\\GameCharacterWinForms.csproj|E:\\_My Documents\\repositories\\Winform-OOP\\GameCharacterWinForms\\gamecharacterwinforms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{46BEFFF4-4662-4BD2-802A-803DE26B81F1}|GameCharacterWinForms\\GameCharacterWinForms.csproj|solutionrelative:gamecharacterwinforms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46BEFFF4-4662-4BD2-802A-803DE26B81F1}|GameCharacterWinForms\\GameCharacterWinForms.csproj|E:\\_My Documents\\repositories\\Winform-OOP\\GameCharacterWinForms\\gamecharacterwinforms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46BEFFF4-4662-4BD2-802A-803DE26B81F1}|GameCharacterWinForms\\GameCharacterWinForms.csproj|solutionrelative:gamecharacterwinforms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46BEFFF4-4662-4BD2-802A-803DE26B81F1}|GameCharacterWinForms\\GameCharacterWinForms.csproj|C:\\Users\\HP\\Desktop\\OOP\\WinForm\\Winform-OOP\\GameCharacterWinForms\\gamecharacterwinforms\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{46BEFFF4-4662-4BD2-802A-803DE26B81F1}|GameCharacterWinForms\\GameCharacterWinForms.csproj|E:\\_My Documents\\repositories\\Winform-OOP\\GameCharacterWinForms\\gamecharacterwinforms\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46BEFFF4-4662-4BD2-802A-803DE26B81F1}|GameCharacterWinForms\\GameCharacterWinForms.csproj|solutionrelative:gamecharacterwinforms\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46BEFFF4-4662-4BD2-802A-803DE26B81F1}|GameCharacterWinForms\\GameCharacterWinForms.csproj|C:\\Users\\HP\\Desktop\\OOP\\WinForm\\Winform-OOP\\GameCharacterWinForms\\gamecharacterwinforms\\properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{46BEFFF4-4662-4BD2-802A-803DE26B81F1}|GameCharacterWinForms\\GameCharacterWinForms.csproj|E:\\_My Documents\\repositories\\Winform-OOP\\GameCharacterWinForms\\gamecharacterwinforms\\properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{46BEFFF4-4662-4BD2-802A-803DE26B81F1}|GameCharacterWinForms\\GameCharacterWinForms.csproj|solutionrelative:gamecharacterwinforms\\properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
@@ -44,9 +44,9 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "Form3.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\OOP\\WinForm\\Winform-OOP\\GameCharacterWinForms\\GameCharacterWinForms\\Form3.cs",
+              "DocumentMoniker": "E:\\_My Documents\\repositories\\Winform-OOP\\GameCharacterWinForms\\GameCharacterWinForms\\Form3.cs",
               "RelativeDocumentMoniker": "GameCharacterWinForms\\Form3.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\OOP\\WinForm\\Winform-OOP\\GameCharacterWinForms\\GameCharacterWinForms\\Form3.cs",
+              "ToolTip": "E:\\_My Documents\\repositories\\Winform-OOP\\GameCharacterWinForms\\GameCharacterWinForms\\Form3.cs",
               "RelativeToolTip": "GameCharacterWinForms\\Form3.cs",
               "ViewState": "AgIAAEQAAAAAAAAAAAAUwGIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -58,9 +58,9 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Resources.resx",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\OOP\\WinForm\\Winform-OOP\\GameCharacterWinForms\\GameCharacterWinForms\\Properties\\Resources.resx",
+              "DocumentMoniker": "E:\\_My Documents\\repositories\\Winform-OOP\\GameCharacterWinForms\\GameCharacterWinForms\\Properties\\Resources.resx",
               "RelativeDocumentMoniker": "GameCharacterWinForms\\Properties\\Resources.resx",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\OOP\\WinForm\\Winform-OOP\\GameCharacterWinForms\\GameCharacterWinForms\\Properties\\Resources.resx",
+              "ToolTip": "E:\\_My Documents\\repositories\\Winform-OOP\\GameCharacterWinForms\\GameCharacterWinForms\\Properties\\Resources.resx",
               "RelativeToolTip": "GameCharacterWinForms\\Properties\\Resources.resx",
               "ViewState": "AgIAAAAAAAAAAAAAAAAswOQAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
@@ -69,24 +69,33 @@
               "EditorCaption": ""
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Form2.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\OOP\\WinForm\\Winform-OOP\\GameCharacterWinForms\\GameCharacterWinForms\\Form2.cs",
+              "DocumentMoniker": "E:\\_My Documents\\repositories\\Winform-OOP\\GameCharacterWinForms\\GameCharacterWinForms\\Form2.cs",
               "RelativeDocumentMoniker": "GameCharacterWinForms\\Form2.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\OOP\\WinForm\\Winform-OOP\\GameCharacterWinForms\\GameCharacterWinForms\\Form2.cs",
+              "ToolTip": "E:\\_My Documents\\repositories\\Winform-OOP\\GameCharacterWinForms\\GameCharacterWinForms\\Form2.cs",
               "RelativeToolTip": "GameCharacterWinForms\\Form2.cs",
-              "ViewState": "AgIAAHwAAAAAAAAAAIAxwJEAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAEgAAAAAAAAAAAD4v2AAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T16:22:47.576Z"
+              "WhenOpened": "2024-12-06T16:22:47.576Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\OOP\\WinForm\\Winform-OOP\\GameCharacterWinForms\\GameCharacterWinForms\\Form1.cs",
+              "DocumentMoniker": "E:\\_My Documents\\repositories\\Winform-OOP\\GameCharacterWinForms\\GameCharacterWinForms\\Form1.cs",
               "RelativeDocumentMoniker": "GameCharacterWinForms\\Form1.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\OOP\\WinForm\\Winform-OOP\\GameCharacterWinForms\\GameCharacterWinForms\\Form1.cs",
+              "ToolTip": "E:\\_My Documents\\repositories\\Winform-OOP\\GameCharacterWinForms\\GameCharacterWinForms\\Form1.cs",
               "RelativeToolTip": "GameCharacterWinForms\\Form1.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAowBwAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -94,11 +103,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Form3.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\OOP\\WinForm\\Winform-OOP\\GameCharacterWinForms\\GameCharacterWinForms\\Form3.cs",
+              "DocumentMoniker": "E:\\_My Documents\\repositories\\Winform-OOP\\GameCharacterWinForms\\GameCharacterWinForms\\Form3.cs",
               "RelativeDocumentMoniker": "GameCharacterWinForms\\Form3.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\OOP\\WinForm\\Winform-OOP\\GameCharacterWinForms\\GameCharacterWinForms\\Form3.cs [Design]",
+              "ToolTip": "E:\\_My Documents\\repositories\\Winform-OOP\\GameCharacterWinForms\\GameCharacterWinForms\\Form3.cs [Design]",
               "RelativeToolTip": "GameCharacterWinForms\\Form3.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-06T13:50:07.293Z",
@@ -108,21 +117,21 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Form2.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\OOP\\WinForm\\Winform-OOP\\GameCharacterWinForms\\GameCharacterWinForms\\Form2.cs",
+              "DocumentMoniker": "E:\\_My Documents\\repositories\\Winform-OOP\\GameCharacterWinForms\\GameCharacterWinForms\\Form2.cs",
               "RelativeDocumentMoniker": "GameCharacterWinForms\\Form2.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\OOP\\WinForm\\Winform-OOP\\GameCharacterWinForms\\GameCharacterWinForms\\Form2.cs [Design]",
+              "ToolTip": "E:\\_My Documents\\repositories\\Winform-OOP\\GameCharacterWinForms\\GameCharacterWinForms\\Form2.cs [Design]",
               "RelativeToolTip": "GameCharacterWinForms\\Form2.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T12:08:59.285Z"
+              "WhenOpened": "2024-12-06T12:08:59.285Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\OOP\\WinForm\\Winform-OOP\\GameCharacterWinForms\\GameCharacterWinForms\\Form1.cs",
+              "DocumentMoniker": "E:\\_My Documents\\repositories\\Winform-OOP\\GameCharacterWinForms\\GameCharacterWinForms\\Form1.cs",
               "RelativeDocumentMoniker": "GameCharacterWinForms\\Form1.cs",
               "ToolTip": "C:\\Users\\HP\\Desktop\\OOP\\WinForm\\Winform-OOP\\GameCharacterWinForms\\GameCharacterWinForms\\Form1.cs [Design]",
-              "RelativeToolTip": "GameCharacterWinForms\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-06T12:08:58.302Z"
             }
